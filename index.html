@@ -1,537 +1,724 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132338182-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-132338182-1');
-    </script>
-
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Free mobile app HTML landing page template to help you build a great online presence for your app which will convert visitors into users">
+    <meta name="author" content="Inovatik">
 
-    <title>Coug Hacks</title>
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
 
-    <!-- Bootstrap core CSS -->
-    <<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Website Title -->
+    <title>ACM WSU Everett</title>
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	<!-- Font Awesome -->
+    <link href="webfonts/font-awesome.min.css" rel="stylesheet">
+	<!-- Favicon  -->
+    <link rel="icon" href="images/ACM_icon.png">
 
-
-    <!-- Custom fonts for this template -->
-    <script src="https://use.fontawesome.com/d61001b752.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/new-age.min.css" rel="stylesheet">
-    <!--<link href="scss/new-age.scss" rel="stylesheet">-->
-
-    <link rel="icon" href="img/crimson-code-logo-white.png">
-  </head>
-
-  <!-- MLH Trust Badge -->
-  <!--- <a id="mlh-trust-badge" href="https://mlh.io/seasons/na-2019/events?utm_source=na-2019&utm_medium=TrustBadge&utm_campaign=na-2019&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg"></a> -->
-  <body id="page-top">
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+    
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/crimson-code-logo-white.png" alt="crimson-code-logo" width="80px"></a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#faq">FAQ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#sponsors">Sponsors</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#team">Team</a>
-            </li>
-          </ul>
-          <ul class="list-inline list-social ml-auto">
-            <li class="list-inline-item social-facebook">
-              <a href="https://www.facebook.com/WSUHackathon/">
-                <i class="fa fa-facebook-official"></i>
-              </a>
-            </li>
-            <li class="list-inline-item social-twitter">
-              <a href="https://twitter.com/wsuhackathon">
-                <i class="fa fa-twitter"></i>
-              </a>
-            </li>
-            <li class="list-inline-item social-envelope">
-              <a href="mailto:crimsoncodeinfo@gmail.com">
-                <i class="fa fa-envelope"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
 
-    <header class="masthead">
-      <div class="container h-100">
-        <div class="row h-100">
-          <div class="col-lg-12 my-auto add-flex">
-            <div class="header-content mx-auto">
-              <h1 class="add-shadow">Dream. Think. Learn. Explore. Teach. Collaborate. Innovate. Advocate. Code. Build. Hack. CrimsonCode.</h1>
-              <a style="margin-right: 20px;" href="https://goo.gl/forms/LioEmjxKuUd0xbly2" class="btn btn-outline js-scroll-trigger" target="_blank">Volunteer</a>
-              <a href="/documents/Sponsorship-Overview-Web.pdf" class="btn btn-outline js-scroll-trigger" target="_blank">Sponsor</a>
-              <br>
-              <br>
-              <h2 class="add-shadow">January 18-19, 2020 <br>
-              915 N. Broadway <br>
-              Washington State University <br>
-              Everett, WA</h2>
-              <a href="https://www.eventbrite.com/e/crimsoncode-hackathon-2019-tickets-54207036706" class="registration-outline registration-btn btn btn-outline js-scroll-trigger" target="_blank">Register</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href="index.html"><img src="images/acm_logo.svg" alt="alternative"></a>
 
-    <section class="faq text-center bg-primary" id="faq">
-      <div class="container">
-        <div class="row">
-            <div class="col-md-12 mx-auto">
-              <h2>Frequently Asked Questions</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="faq-content" id="faq-content">
-      <div class="container">
-        <div class="faq-column">
-          <div>
-            <h3>What is Coug Hacks?</h3>
-            <p>Coug Hacks is a 24-hour collegiate hackathon held at Washington State University in Everett, WA.</p>
-          </div>
-          <div>
-            <h3>Who can attend?</h3>
-            <p>We encourage students of all majors and all levels of coding experience to attend. We will have mentors available to help you learn new technologies and give guidance on projects.</p>
-          </div>
-          <div>
-            <h3>How much does this cost?</h3>
-            <p>Coug Hacks is completely free as we believe that it is more important for students to focus on their projects rather than worrying about the essentials. As such, all food, caffiene, and internet will be completely free during the event.</p>
-          </div>
-          <div>
-            <h3>What should I bring?</h3>
-            <p>Bring your excitement and passion! Besides those two things, students should also bring a laptop (or desktop computer), charger, and power strip. Toothbrush, change of clothes, and sleeping bag/blanket are also highly recommended.</p>
-          </div>
-          <div>
-            <h3>How big are the teams?</h3>
-            <p>In order to allow teams to be from more diverse academic backgrounds, teams can be a maximum of 4 people per team. As such, we encourage participants to work with some people that they don't know.</p>
-          </div>
-          <div>
-            <h3>What if I don't have a team?</h3>
-            <p>In the months and weeks leading up to the hackathon, we will be hosting activities to help people find teams. Please check our Facebook page for more specific details on these activities.</p>
-          </div>
-          <div>
-            <h3>What if I don't have any ideas but still want to participate?</h3>
-            <p> -- Insert thing here ---</p>
-          </div>
-          <div>
-            <h3>Can I work on my project beforehand?</h3>
-            <p>No. We encourage everyone to start a brand new project at the hackathon. However, you are allowed to develop libraries or use outside libraries to help you with your project. If you think you might be in sketchy territory, contact or find an organizer to have us check it out.</p>
-          </div>
-          <div>
-            <h3>Does Coug Hacks provide travel reimbursement?</h3>
-            <p>Unfortunately, our budget this year simply won't allow for us to provide travel reimbursement.</p>
-          </div>
-          <div>
-            <h3>I have a different question. Who can I ask?</h3>
-            <p>Please reach out to us via Facebook, Twitter, or send us an email. We'd be more than happy to answer any questions you may have.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    
-    <section class="schedule text-center bg-primary" id="schedule">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 mx-auto">
-          <h2>Schedule &amp; Events</h2>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    
-
-    <section class="schedule-content text-center" id="schedule-content">
-      <div class="container">
+        <a class="navbar-brand logo-text page-scroll" href="https://everett.wsu.edu/" >@ WSU Everett</a> 
         
-        <div class="row">
-          <div>
-              <h1 class="general-schedule">Hack Week</h1>
-          </div>
-          <br /><br /><br />
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
 
-          <div class="col-md-12 mx-auto schedule-days">
-            <div>
-              <div class="schedule-event">
-                <h1 class="schedule-header"><b class="add-shadow">Starting</b> Tuesday, Feb. 19th</h1>
-              </div>
-              <div class="schedule-event">
-                <h1 class="schedule-header"><b class="add-shadow">Ending</b> Friday, Feb. 22nd</h1>
-              </div>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#header">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#about">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#our_team">OUR TEAM</a>
+                </li>
+
+                <!-- Dropdown Menu -->          
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">EVENTS</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="hackathon.html"><span class="item-text">HACKATHON</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="calendar.html"><span class="item-text">CALENDAR</span></a>
+                    </div>
+                </li>
+                <!-- end of dropdown menu -->
+
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#contact">CONTACT</a>
+                </li>
+            </ul>
+            <span class="nav-item social-icons">
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-twitter fa-stack-1x"></i>
+                    </a>
+                </span>
+            </span>
+        </div>
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text-container">
+                            <h1>PROFESSIONAL DEVELOPMENT<br>FOR <span id="js-rotating">SOFTWARE ENGINEERS, DOPE ASS PPL</span></h1>
+                            <p class="p-large">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua..</p>
+                            <!-- <a class="btn-solid-lg page-scroll" href="#your-link"><i class="fab fa-apple"></i>APP STORE</a>
+                            <a class="btn-solid-lg page-scroll" href="#your-link"><i class="fab fa-google-play"></i>PLAY STORE</a> -->
+                        </div>
+                    </div> <!-- end of col -->
+                    <div class="col-lg-6">
+                        <div class="image-container">
+                            <img class="img-fluid" src="images/laptop-illustration-2.png" alt="alternative">
+                        </div> <!-- end of image-container -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of header-content -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+    <!-- Features -->
+    <!-- Will be about -->
+
+    <div id="about" class="tabs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>ABOUT</h2>
+                    <div class="p-heading p-large">Leno was designed based on input from personal development coaches and popular trainers so it offers all</div>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+
+            <div class="row">
+                 <div class="image-container">
+                        <img class="img-fluid" src="images/outside.jpg" alt="alternative">
+                </div> <!-- end of image-container -->
             </div>
-          </div>
+            </br></br>
+            <div class="row">
 
-          <div class="schedule-event">
-            <p id="hack-week-info">This year, we are excited to announce our first ever <b>Hack Week</b>, 
-            a weeklong event of tech talks, workshops, and social events for the WSU 
-            Community leading up to CrimsonCode 2019.
-            Hack Week's goal is to promote the usage of technology across the Pullman community. <br>
-            Schedule will be posted ASAP on our <a href="https://www.facebook.com/WSUHackathon/">Facebook Page</a>.
-            </p>
-          </div>
-        </div>
+                <!-- Tabs Links -->
+                <ul class="nav nav-tabs" id="lenoTabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="fas fa-cog"></i>CONFIGURING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-binoculars"></i>TRACKING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false"><i class="fas fa-search"></i>MONITORING</a>
+                    </li>
+                </ul>
+                <!-- end of tabs links -->
 
-        <br /><br />
 
-        <div class="row">
-          <div>
-            <h1 class="general-schedule">General Schedule</h1>
-          </div><br /><br /><br />
-          <div class="col-md-12 mx-auto schedule-days">
-            <div>
-              <div class="schedule-event-left">
-                <h1 class="schedule-header">Saturday, Feb. 23</h1>
+                <!-- Tabs Content-->
+                <div class="tab-content" id="lenoTabsContent">
+                    
+                    <!-- Tab -->
+                    <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
+                        <div class="container">
+                            <div class="row">
+                                
+                                <!-- Icon Cards Pane -->
+                                <div class="col-lg-4">
+                                    <div class="card left-pane first">
+                                        <div class="card-body">
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Goal Setting</h4>
+                                                <p>Like any self improving process, everything starts with setting your goals and committing to them</p>
+                                            </div>
+                                            <div class="card-icon">
+                                                <i class="far fa-compass"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card left-pane">
+                                        <div class="card-body">
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Visual Editor</h4>
+                                                <p>Leno provides a well designed and ergonomic visual editor for you to edit your notes and input data</p>
+                                            </div>
+                                            <div class="card-icon">
+                                                <i class="far fa-file-code"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card left-pane">
+                                        <div class="card-body">
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Refined Options</h4>
+                                                <p>Each option packaged in the app's menus is provided in order to improve your personal development status</p>
+                                            </div>
+                                            <div class="card-icon">
+                                                <i class="far fa-gem"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end of icon cards pane -->
+
+                                <!-- Image Pane -->
+                                <div class="col-lg-4">
+                                    <img class="img-fluid" src="images/features-iphone-1.png" alt="alternative">
+                                </div>
+                                <!-- end of image pane -->
+                                
+                                <!-- Icon Cards Pane -->
+                                <div class="col-lg-4">
+                                    <div class="card right-pane first">
+                                        <div class="card-body">
+                                            <div class="card-icon">
+                                                <i class="far fa-calendar-check"></i>
+                                            </div>
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Calendar Input</h4>
+                                                <p>Schedule your appointments, meetings and periodical evaluations using the provided in-app calendar option</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card right-pane">
+                                        <div class="card-body">
+                                            <div class="card-icon">
+                                                <i class="far fa-bookmark"></i>
+                                            </div>
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Easy Reading</h4>
+                                                <p>Reading focus mode for long form articles, ebooks and other materials which involve large text areas</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card right-pane">
+                                        <div class="card-body">
+                                            <div class="card-icon">
+                                                <i class="fas fa-cube"></i>
+                                            </div>
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Good Foundation</h4>
+                                                <p>Get a solid foundation for your self development efforts. Try Leno mobile app for any mobile platform</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end of icon cards pane -->
+
+                            </div> <!-- end of row -->
+                        </div> <!-- end of container -->
+                    </div> <!-- end of tab-pane -->
+                    <!-- end of tab -->
+
+                    <!-- Tab -->
+                    <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
+                        <div class="container">
+                            <div class="row">
+
+                                <!-- Image Pane -->
+                                <div class="col-md-4">
+                                    <img class="img-fluid" src="images/features-iphone-2.png" alt="alternative">
+                                </div>
+                                <!-- end of image pane -->
+                                
+                                <!-- Text And Icon Cards Area -->
+                                <div class="col-md-8">
+                                    <div class="text-area">
+                                        <h3>Track Result Based On Your</h3>
+                                        <p>After you've configured the app and settled on the data gathering techniques you can not start the information trackers and start collecting those <a class="turquoise" href="#your-link">interesting details</a>. You can always change them.</p>
+                                    </div> <!-- end of text-area -->
+                                    
+                                    <div class="icon-cards-area">
+                                            <div class="card">
+                                                <div class="card-icon">
+                                                    <i class="fas fa-cube"></i>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Good Foundation</h4>
+                                                    <p>Get a solid foundation for your self development efforts. Try Leno mobile app for any mobile platform</p>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-icon">
+                                                    <i class="far fa-bookmark"></i>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Easy Reading</h4>
+                                                    <p>Reading focus mode for long form articles, ebooks and other materials which involve large text areas</p>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-icon">
+                                                    <i class="far fa-calendar-check"></i>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Calendar Input</h4>
+                                                    <p>Schedule your appointments, meetings and periodical evaluations using the provided in-app calendar option</p>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-icon">
+                                                    <i class="far fa-file-code"></i>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Visual Editor</h4>
+                                                    <p>Leno provides a well designed and ergonomic visual editor for you to edit your notes and input data</p>
+                                                </div>
+                                            </div>
+                                    </div> <!-- end of icon cards area -->
+                                </div> <!-- end of col-md-8 -->
+                                <!-- end of text and icon cards area -->
+
+                            </div> <!-- end of row -->
+                        </div> <!-- end of container -->
+                    </div> <!-- end of tab-pane -->
+                    <!-- end of tab -->
+
+                    <!-- Tab -->
+                    <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
+                        <div class="container">
+                            <div class="row">
+
+                                <!-- Text And Icon Cards Area -->
+                                <div class="col-md-8">
+                                    <div class="icon-cards-area">
+                                        <div class="card">
+                                            <div class="card-icon">
+                                                <i class="far fa-calendar-check"></i>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="card-title">Calendar Input</h4>
+                                                <p>Schedule your appointments, meetings and periodical evaluations using the provided in-app calendar option</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-icon">
+                                                <i class="far fa-file-code"></i>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="card-title">Visual Editor</h4>
+                                                <p>Leno provides a well designed and ergonomic visual editor for you to edit your notes and input data</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-icon">
+                                                <i class="fas fa-cube"></i>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="card-title">Good Foundation</h4>
+                                                <p>Get a solid foundation for your self development efforts. Try Leno mobile app for any mobile platform</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-icon">
+                                                <i class="far fa-bookmark"></i>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="card-title">Easy Reading</h4>
+                                                <p>Reading focus mode for long form articles, ebooks and other materials which involve large text areas</p>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end of icon cards area -->
+                                    
+                                    <div class="text-area">
+                                        <h3>Monitoring Tools Evaluation</h3>
+                                        <p>Monitor the evolution of your finances and health state using tools integrated in Leno. The generated real time reports can be filtered based on any <a class="turquoise" href="#your-link">desired criteria</a>.</p>
+                                    </div> <!-- end of text-area -->
+                                </div> <!-- end of col-md-8 -->
+                                <!-- end of text and icon cards area -->
+
+                                <!-- Image Pane -->
+                                <div class="col-md-4">
+                                    <img class="img-fluid" src="images/features-iphone-3.png" alt="alternative">
+                                </div>
+                                <!-- end of image pane -->
+                                    
+                            </div> <!-- end of row -->
+                        </div> <!-- end of container -->
+                    </div><!-- end of tab-pane -->
+                    <!-- end of tab -->
+
+                </div> <!-- end of tab-content -->
+                <!-- end of tabs content -->
+
+            </div> <!-- end of row --> 
+        </div> <!-- end of container --> 
+    </div> <!-- end of tabs -->
+    <!-- end of features -->
+
+
+    <!-- Our team -->
+    <div id="our_team" class="basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>MEET OUR TEAM</h2>
+                    <div class="p-heading p-large">Target the right customers for your business with the help of Leno's patented segmentation technology</div>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <!-- Team Member's Details -->
+                <div class="team-content">
+                  <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-6"> 
+                      <!-- Team Member -->
+                      <div class="team-member pDark"> 
+                        <!-- Image Hover Block -->
+                        <div class="member-img"> 
+                          <!-- Image  --> 
+                          <img class="img-responsive" src="images/photo-1.jpg" alt=""> </div>
+                        <!-- Member Details -->
+                        <h4>Josh LaPierre</h4>
+                        <!-- Designation --> 
+                        <span class="pos">Chair</span>
+                        <div class="team-socials"> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fab fa-github"></i></a> </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6"> 
+                      <!-- Team Member -->
+                      <div class="team-member pDark"> 
+                        <!-- Image Hover Block -->
+                        <div class="member-img"> 
+                          <!-- Image  --> 
+                          <img class="img-responsive" src="images/photo-2.jpg" alt=""> </div>
+                        <!-- Member Details -->
+                        <h4>Sarak</h4>
+                        <!-- Designation --> 
+                        <span class="pos">Vice Chair</span>
+                        <div class="team-socials"> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fab fa-github"></i></a> </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6"> 
+                      <!-- Team Member -->
+                      <div class="team-member pDark"> 
+                        <!-- Image Hover Block -->
+                        <div class="member-img"> 
+                          <!-- Image  --> 
+                          <img class="img-responsive" src="images/photo-3.jpg" alt=""> </div>
+                        <!-- Member Details -->
+                        <h4>Francisco Robles</h4>
+                        <!-- Designation --> 
+                        <span class="pos">Treasurer</span>
+                        <div class="team-socials"> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fab fa-github"></i></a> </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6"> 
+                      <!-- Team Member -->
+                      <div class="team-member pDark"> 
+                        <!-- Image Hover Block -->
+                        <div class="member-img"> 
+                          <!-- Image  --> 
+                          <img class="img-responsive" src="images/rebecca.jpg" alt=""> </div>
+                        <!-- Member Details -->
+                        <h4>Rebecca Rothschild</h4>
+                        <!-- Designation --> 
+                        <span class="pos">Secretary</span>
+                        <div class="team-socials"> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fab fa-github"></i></a> </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              </br>
-              <div class="schedule-event-left">
-                <div>
-                  <h4 class="schedule-event-time">7:45 AM</h4>
-                </div>
-                <div class="schedule-event-title">
-                  <h4>Sponsor Check-In</h4>
-                  <p>The Spark Atrium</p>
-                </div>
-              </div>
-              <div class="schedule-event-left">
-                <div>
-                  <h4 class="schedule-event-time">8:30 AM</h4>
-                </div>
-                <div class="schedule-event-title">
-                  <h4>Hacker Check-In &amp; Breakfast</h4>
-                  <p>The Spark Atrium</p>
-                </div>
-              </div>
-              <div class="schedule-event-left">
-                <div>
-                  <h4 class="schedule-event-time">9:15 AM</h4>
-                </div>
-                <div class="schedule-event-title">
-                  <h4>Opening Ceremony</h4>
-                  <p>Spark G045</p>
-                </div>
-              </div>
-              <div class="schedule-event-left">
-                <div>
-                  <h4 class="schedule-event-time">10:00 AM</h4>
-                </div>
-                <div class="schedule-event-title">
-                  <h4>Hacking Starts</h4>
-                  <p>The Spark Building</p>
-                </div>
-              </div>
-              <div class="schedule-event-left">
-                <div>
-                  <h4 class="schedule-event-time">12:30 PM</h4>
-                </div>
-                <div class="schedule-event-title">
-                  <h4>Lunch</h4>
-                  <p>The Spark Atrium</p>
-                </div>
-              </div>
-              <div class="schedule-event-left">
-                <div>
-                  <h4 class="schedule-event-time">7:00 PM</h4>
-                </div>
-                <div class="schedule-event-title">
-                  <h4>Dinner</h4>
-                  <p>The Spark Atrium</p>
-                </div>
-              </div>
-              <div class="schedule-event-left">
-                <div>
-                  <h4 class="schedule-event-time">9:00 PM</h4>
-                </div>
-                <div class="schedule-event-title">
-                  <h4>MLH Cupstacking Contest</h4>
-                  <p>The Spark Atrium</p>
-                </div>
-              </div>
+              <!--/.container--> 
             </div>
-            
-            <div>
-              <div class="schedule-event-right">
-                <h1 class="schedule-header">Sunday, Feb. 24</h1>
-              </div>
-              </br>
-              <div class="schedule-event-right">
-                <div class="schedule-event-time">
-                  <h4 class="schedule-event-time">12:00 AM</h4>
-                </div>
-                <div class="schedule-event-title">
-                  <h4>Late Night Monster Energy Drinks</h4>
-                  <p>The Spark Atrium</p>
-                </div>
-              </div>
-              <div class="schedule-event-right">
-                <div class="schedule-event-time">
-                  <h4 class="schedule-event-time">12:45 AM</h4>
-                </div>
-                <div class="schedule-event-title">
-                  <h4>Insomnia Cookies</h4>
-                  <p>The Spark Atrium</p>
-                </div>
-              </div>
-              <div class="schedule-event-right">
-                <div class="schedule-event-time">
-                  <h4 class="schedule-event-time">9:00 AM</h4>
-                </div>
-                <div class="schedule-event-title">
-                  <h4>Breakfast</h4>
-                  <p>The Spark Atrium</p>
-                </div>
-              </div>
-              <div class="schedule-event-right">
-                <div class="schedule-event-time">
-                  <h4 class="schedule-event-time">9:30 AM</h4>
-                </div>
-                <div class="schedule-event-title">
-                  <h4>Hacking Stops</h4>
-                  <p></p>
-                  <h4>Presentations Due!</h4>
-                  <p>Submit here: <a href="https://devpost.com/submit-to/7569-crimsoncode-hackathon/select">DevPost Link</a></p>
-                </div>
-              </div>
-              <div class="schedule-event-right">
-                <div>
-                  <h4 class="schedule-event-time">10:30 AM</h4>
-                </div>
-                <div class="schedule-event-title">
-                  <h4>Project Demos/Judging</h4>
-                  <p>Spark 323, 327, 333, 335, or 339</p>
-                </div>
-              </div>
-              <div class="schedule-event-right">
-                <div>
-                  <h4 class="schedule-event-time">12:00 PM</h4>
-                </div>
-                <div class="schedule-event-title">
-                  <h4>Closing Ceremony</h4>
-                  <p>Spark G045</p>
-                </div>
-              </div>
-              <div class="schedule-event-right">
-                <div>
-                  <h4 class="schedule-event-time"></h4>
-                </div>
-                <div class="schedule-event-title">
-                  <h4></h4>
-                  <p></p>
-                </div>
-              </div>
-              <div class="schedule-event-right">
-                <div>
-                  <h4 class="schedule-event-time"></h4>
-                </div>
-                <div class="schedule-event-title">
-                  <h4></h4>
-                  <p></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of our team -->
 
-    <section class="sponsors text-center bg-primary" id="sponsors">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 mx-auto">
-            <h2>Sponsors &amp <br> Partners</h2>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="sponsors text-center sponsor-background" id="sponsors-content">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 mx-auto">
-          <h1>Sponsors</h1>
-          <a href="https://selinc.com/" target="_blank"><img class="sponsor-logo-large" src="img/sponsor-logos/SEL_Logo-Stacked_White.png" alt="sel-logo" width="1000px"></a></br>
-          <a href="https://aswsu.wsu.edu/" target="_blank"><img class="sponsor-logo-smaller" src="img/sponsor-logos/aswsu-logo.png" alt="aswsu-logo" width="450px"></a></br></br>
-          <a href="https://www.expeditors.com/" target="_blank"><img class="sponsor-logo-smaller" src="img/sponsor-logos/Expeditors_logo.png" alt="expeditors-logo" width="300px"></a></br></br>
-          <a href="http://studentinvolvement.orgsync.com/org/wsurha/home" target="_blank"><img class="sponsor-logo-smaller" src="img/sponsor-logos/rha-logo.png" alt="rha-logo" width="300px"></a></br></br>
-          <a href="https://www.monsterenergy.com/" target="_blank"><img class="sponsor-logo-smaller" src="img/sponsor-logos/monster-energy.png" alt="monster-logo" width="300px"></a></br></br>
-          <a href="https://insomniacookies.com/" target="_blank"><img class="sponsor-logo-smaller" src="img/sponsor-logos/insomnia-cookies.png" alt="insomnia-cookies-logo" width="300px"></a></br></br>
-          <a href="https://www.wolfram.com/language/" target="_blank"><img class="sponsor-logo-smaller" src="img/sponsor-logos/wolframlogo.png" alt="wolfram-language-logo" width="300px"></a></br></br>
-          <a href="https://www.gitkraken.com/" target="_blank"><img class="sponsor-logo-smaller" src="img/sponsor-logos/gitkraken-logo.png" alt="gitkraken-logo" width="300px"></a></br></br>
-          </div>
-        </div>
-        </br></br>
-        <h1>Partners</h1>
-        <h2 style="color: white; opacity: 1; margin-top: 40px; font-size: 60pt;">Apple</h2>
-        </br></br>
-        <a href="https://mlh.io/beta/events?utf8=%E2%9C%93&search%5Bregion%5D=All&search%5Bname%5D=" target="_blank"><img class="sponsor-logo-smaller" src="img/sponsor-logos/mlh-logo-white.png" alt="mlh-logo" width="200px"></a><br><br>
-        <!-- <a href="https://www.alaskaair.com/" target="_blank"><img class="sponsor-logo-large" src="img/sponsor-logos/alaska-airlines-logo" alt="alaska-airlines-logo" width="350px" style="margin-top: 10px"></a><br> -->
-        <a href="https://www.stickermule.com/supports/crimsoncode" target="_blank"><img class="sponsor-logo-large" src="img/sponsor-logos/sticker-mule-logo-white.png" alt="sticker-mule-logo" width="500px" style="margin-top: 10px"></a><br><br>
-        <a href="https://innovationcollective.co/" target="_blank"><img class="sponsor-logo-smaller" src="img/sponsor-logos/ic_black.png" alt="innovation-collective-logo" width="300px" style="margin-top: 10px"></a>
-      </div>
-    </section>
+    <!-- Details 1 -->
+    <div id="details" class="basic-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="images/details-1-iphone.png" alt="alternative">
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h3>Goals Setting</h3>
+                        <p>Leno can easily help you track your personal development evolution if you take the time to properly setup your goals at the beginning of the training process. Check out the details</p>
+                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-1">LIGHTBOX</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-2 -->
+    <!-- end of details 1 -->
 
-    <section class="team text-center bg-primary" id="team">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 mx-auto">
-            <h2>The Team</h2>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="team-content text-center" id="team-content">
-      <div class="team-container">
-        <div>
-          <br>
-          <p class="team-intro">The leaders and organizers of the CrimsonCode hackathon are a group of hard working people that help to make this event possible. All of the leaders and organizers are full-time students at Washington State University who have volunteered to dedicate their valuable time to the planning and execution of the CrimsonCode hackathon. </p>
-          <h1>CrimsonCode Leaders</h1>
-          <a href="https://www.linkedin.com/in/kylerlittle/" target="_blank">
-            <div id="kyler" class="team-member-picture">
-              <div class="team-member-picture-text">
-                <h4 class="add-shadow">Sponsorship <br> Director</h4>
-                <h4>Kyler Little</h4>
-              </div>
-            </div>
-          </a>
-          <h2 class="team-titles">Sponsorship Director</h2>
-          <h4 class="team-titles">Kyler Little</h4>
-          <a href="https://www.linkedin.com/in/moniqueiperez/" target="_blank">
-            <div id="monique" class="team-member-picture">
-                <div class="team-member-picture-text">
-                    <h4 class="add-shadow">Logistics <br> Director</h4>
-                    <h4>Monique Perez</h4>
-                </div>
-            </div>
-          </a>
-          <h2 class="team-titles">Logistics Director</h2>
-          <h4 class="team-titles">Monique Perez</h4>
-          <a href="https://www.linkedin.com/in/the-eli-forbes/" target="_blank">
-            <div id="eli" class="team-member-picture">
-              <div class="team-member-picture-text">
-                  <h4 class="add-shadow">CrimsonCode <br> Leader</h4>
-                  <h4>Eli Forbes</h4>
-              </div>
-            </div>
-          </a>
-          <h2 class="team-titles">CrimsonCode Leader</h2>
-          <h4 class="team-titles">Eli Forbes</h4>
-          <a href="https://www.linkedin.com/in/nick-vasicek-b95654148/" target="_blank">
-            <div id="nick" class="team-member-picture">
-                <div class="team-member-picture-text">
-                    <h4 class="add-shadow">Executive <br> Team Director</h4>
-                    <h4>Nick Vasicek</h4>
-                </div>
-            </div>
-          </a>
-          <h2 class="team-titles">Executive Team Director</h2>
-          <h4 class="team-titles">Nick Vasicek</h4>
-        </div>
-      </div>
-      <br><br>
-      <h1>CrimsonCode Organizers</h1>
-      <br>
-      <div class="organizer-container">
-        <div>
-          <h3>Sponsorship Team</h3>
-          <p>
-            Nancy Fu <br>
-            Nik Walton <br>
-            Freya Varez<br>
-            <br>
-          </p>
-        </div>
-        <div>
-          <h3>Logistics Team</h3>
-          <p>
-            Alex Castillo <br>
-            Alexander Barrett <br>
-            Jacob Plank <br>          
-            Jiawei Liu <br>
-          </p>
-        </div>
-        <div>
-          <h3>Operations &amp Marketing Team</h3>
-          <p>
-            Adam Olbrys <br>
-            Caden Weiner <br>
-            Cameron Cain <br>
-            William Henry Kee <br>
-          </p>
-        </div>
-      </div>
-    </section>
+    <!-- Details 2 -->
+    <div class="basic-3">
+        <div class="second">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text-container">
+                            <h3>Calendar Input</h3>
+                            <p>The calendar input function enables the user to setup training, meditation and relaxation sessions with ease. Just open the feature and start setting up your time as you desire</p>
+                            <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-2">LIGHTBOX</a>
+                        </div> <!-- end of text-container -->
+                    </div> <!-- end of col -->
+                    <div class="col-lg-6">
+                        <img class="img-fluid" src="images/details-2-iphone.png" alt="alternative">
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of second -->
+    </div> <!-- end of basic-3 -->    
+    <!-- end of details 2 -->
 
-    <footer>
-      <div class="container inline-container footer-content">
-        <p class="footer-color">CrimsonCode &copy; 2017</p>
-        <p class="footer-link-color"><a href="/documents/mlh-code-of-conduct.pdf">Code of conduct</a></p>
-        <ul class="list-inline list-social-footer">
-          <li class="list-inline-item social-facebook">
-            <a href="https://www.facebook.com/WSUHackathon/">
-              <i class="fa fa-facebook-official"></i>
-            </a>
-          </li>
-          <li class="list-inline-item social-twitter">
-            <a href="https://twitter.com/wsuhackathon">
-              <i class="fa fa-twitter"></i>
-            </a>
-          </li>
-          <li class="list-inline-item social-envelope">
-            <a href="mailto:crimsoncodeinfo@gmail.com">
-              <i class="fa fa-envelope"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </footer>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper/popper.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Details Lightboxes -->
+	<!-- Lightbox -->
+	<div id="details-lightbox-1" class="lightbox-basic zoom-anim-dialog mfp-hide">
+		<div class="row">
+			<button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+			<div class="col-lg-6">
+				<img class="img-fluid" src="images/details-lightbox-1.png" alt="alternative">
+			</div>
+			<div class="col-lg-6">
+				<h3>Goals Setting</h3>
+				<hr>
+                <p>Leno can easily help you track your personal development evolution if you take the time to set it up.</p>
+                <h4>User Feedback</h4>
+                <p>This is a great app which can help you save time and make your live easier. And it will help improve your productivity levels.</p>
+                <p>You should definitely give it a try when you need a good app.</p>
+				<table>
+					<tr><td class="icon-cell"><i class="fas fa-desktop"></i></td><td>Responsive layout</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-bullhorn"></i></td><td>Distinctive CTAs</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-image"></i></td><td>Image gallery slider</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-envelope"></i></td><td>Contact forms</td></tr>
+					<tr><td class="icon-cell"><i class="fab fa-font-awesome-flag"></i></td><td>FontAwesome icons</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-code"></i></td><td>Well-structured code</td></tr>
+				</table>
+				<a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#details">BACK</a> 
+			</div>
+		</div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    
+    <!-- Lightbox -->
+    <div id="details-lightbox-2" class="lightbox-basic zoom-anim-dialog mfp-hide">
+		<div class="row">
+			<button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+			<div class="col-lg-6">
+				<img class="img-fluid" src="images/details-lightbox-2.png" alt="alternative">
+			</div>
+			<div class="col-lg-6">
+				<h3>Calendar Input</h3>
+				<hr>
+                <p>The calendar input function enables the user to setup training, meditation and relaxation sessions with ease.</p>
+                <h4>User Feedback</h4>
+                <p>This is a great app which can help you save time and make your live easier. And it will help improve your productivity levels.</p>
+                <p>You should definitely give it a try when you need a good app.</p>
+				<table>
+					<tr><td class="icon-cell"><i class="fas fa-desktop"></i></td><td>Responsive layout</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-bullhorn"></i></td><td>Distinctive CTAs</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-image"></i></td><td>Image gallery slider</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-envelope"></i></td><td>Contact forms</td></tr>
+					<tr><td class="icon-cell"><i class="fab fa-font-awesome-flag"></i></td><td>FontAwesome icons</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-code"></i></td><td>Well-structured code</td></tr>
+				</table>
+				<a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#details">BACK</a>
+			</div>
+		</div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    <!-- end of details lightboxes -->
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/new-age.min.js"></script>
+    <!-- Contact -->
+    <div id="contact" class="form">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>CONTACT</h2>
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="address">Don't hesitate to contact us with any questions!</li>
+                        <li><i class="fas fa-map-marker-alt"></i>WSU everett address</li>
+                        <li><i class="fas fa-phone"></i><a class="blue" href="tel:003024630820">Probably don't need a ohone #</a></li>
+                        <li><i class="fas fa-envelope"></i><a class="blue" href="mailto:acmwsueverett@gmail.com">acmwsueverett@gmail.com?</a></li>
+                    </ul>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    
+                    <!-- Contact Form -->
+                    <form id="contactForm" data-toggle="validator" data-focus="false">
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" id="cname" required>
+                            <label class="label-control" for="cname">Name</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control-input" id="cemail" required>
+                            <label class="label-control" for="cemail">Email</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
+                            <label class="label-control" for="cmessage">Your message</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <!-- <div class="form-group checkbox">
+                            <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>I have read and agree to Leno's stated conditions in <a href="privacy-policy.html">Privacy Policy</a> and <a href="hackathon.html">Terms Conditions</a> 
+                            <div class="help-block with-errors"></div>
+                        </div> -->
+                        <div class="form-group">
+                            <button type="submit" class="form-control-submit-button">SUBMIT MESSAGE</button>
+                        </div>
+                        <div class="form-message">
+                            <div id="cmsgSubmit" class="h3 text-center hidden"></div>
+                        </div>
+                    </form>
+                    <!-- end of contact form -->
 
-  </body>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of form -->
+    <!-- end of contact -->
 
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-col">
+                        <h4>About The ACM @ WSUE</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col middle">
+                        <h4>Important Links</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Do we have any important <a class="turquoise" href="#your-link">links?</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col last">
+                        <h4>Social Media</h4>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-google-plus-g fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                            </a>
+                        </span>
+                    </div> 
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">The Association for Computing Machinery @ Washington State University Everett</p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    
+    	
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+</body>
 </html>
