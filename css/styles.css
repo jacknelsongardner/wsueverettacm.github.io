@@ -270,6 +270,13 @@ a.white {
 	transition: all 0.2s ease;
 }
 
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+  }
+
 /* IE10+ hack to solve lower label text position compared to the rest of the browsers */
 @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
 	.label-control {
@@ -2206,6 +2213,128 @@ a:hover.back-to-top {
 	.ex-basic-2 .image-container-small {
 		margin-left: 1.75rem;
 	}
+
+
 	/* end of extra pages */
 }
-/* end of min-width width 1200px 
+/* end of min-width width 1200px */
+.schedule-section h2 {
+	font-size: 2.369rem;
+	color: #c69214;
+	margin-top: 0; }
+	@media (min-width: 992px) {
+	  .schedule-section h2 {
+		font-size: 3rem; } }
+  
+  .schedule-section .date {
+	font-size: 1.333rem;
+	margin: 0.5rem 0;
+	font-weight: 600; }
+  
+  .schedule-section .events-container {
+	margin-top: 1rem; }
+	.schedule-section .events-container .event {
+	  display: flex;
+	  justify-content: space-between;
+	  font-weight: 300;
+	  margin: 8px 0;
+	  padding: 0.25rem 0; }
+	  .schedule-section .events-container .event .event-name,
+	  .schedule-section .events-container .event .event-time {
+		font-family: "DM Sans", sans-serif; }
+  
+  .schedule-section .schedule-desktop {
+	padding: 0 1.3rem;
+	display: none;
+	margin: 15vh 0 10vh 0;
+	justify-content: space-between; }
+	@media (min-width: 768px) {
+	  .schedule-section .schedule-desktop {
+		padding: 0 1.3rem; } }
+	@media (min-width: 768px) {
+	  .schedule-section .schedule-desktop {
+		display: flex; } }
+	@media (min-width: 992px) {
+	  .schedule-section .schedule-desktop {
+		padding: 0 5rem !important; } }
+	.schedule-section .schedule-desktop .pane {
+	  width: 45%;
+	  margin: 0 2rem; }
+	.schedule-section .schedule-desktop .calday {
+	  border-top: 8px solid #5e6a71;
+	  width: 100%; }
+	  .schedule-section .schedule-desktop .calday h3 {
+		color: #5e6a71;
+		margin: 0;
+		margin-bottom: 0.5rem;
+		margin-top: 1rem;
+		font-size: 2.369rem; }
+  
+  .schedule-section .schedule-mobile {
+	margin-top: 5vh;
+	display: block; }
+	@media (min-width: 768px) {
+	  .schedule-section .schedule-mobile {
+		display: none; } }
+	@media (max-width: 576px) {
+	  .schedule-section .schedule-mobile .date {
+		font-size: 1rem !important; } }
+	.schedule-section .schedule-mobile h2 {
+	  text-align: center;
+	  width: 100%;
+	  font-size: 1.75rem !important; }
+	.schedule-section .schedule-mobile #day-selector {
+	  width: 100%;
+	  display: flex;
+	  flex-direction: row;
+	  position: relative; }
+	  .schedule-section .schedule-mobile #day-selector .day {
+		width: 50%;
+		outline: none;
+		border: none;
+		background: transparent;
+		padding: 0;
+		padding-bottom: 0px;
+		padding-bottom: 1.5rem;
+		font-size: 1.777rem;
+		font-weight: 900;
+		color: #ef60a3;
+		font-family: "Montserrat", sans-serif;
+		opacity: 0.5;
+		border-bottom: 1px #d8d8d8 solid;
+		cursor: pointer;
+		transition: 0.2s all ease-in-out; }
+		.schedule-section .schedule-mobile #day-selector .day:hover, .schedule-section .schedule-mobile #day-selector .day.active {
+		  opacity: 1; }
+		@media (max-width: 576px) {
+		  .schedule-section .schedule-mobile #day-selector .day {
+			font-size: 1.25rem; } }
+	  .schedule-section .schedule-mobile #day-selector #active-day-marker {
+		width: 50%;
+		height: 10%;
+		position: absolute;
+		bottom: 0%;
+		left: 0;
+		background-color: #ef60a3;
+		transition: all 0.2s ease-in-out; }
+		.schedule-section .schedule-mobile #day-selector #active-day-marker.day2 {
+		  left: 50%; }
+	.schedule-section .schedule-mobile #day-panes {
+	  position: relative; }
+	  .schedule-section .schedule-mobile #day-panes .calday {
+		padding: 2rem 1.3rem;
+		transition: all 0.2s ease-in-out;
+		position: absolute; }
+		@media (min-width: 768px) {
+		  .schedule-section .schedule-mobile #day-panes .calday {
+			padding: 2rem 1.3rem; } }
+		.schedule-section .schedule-mobile #day-panes .calday.active {
+		  position: relative;
+		  transform: translateX(0) !important;
+		  display: block; }
+	  .schedule-section .schedule-mobile #day-panes #day1-pane {
+		transform: translateX(-1000%); }
+	  .schedule-section .schedule-mobile #day-panes #day2-pane {
+		transform: translateX(1000%); }
+  
+
