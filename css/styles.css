@@ -51,6 +51,29 @@ NEW Colors:
 - Backgrounds - white #fff
 ******************************************/
 
+.collapsible {
+	background-color: #777;
+	color: white;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+	background-color: #555;
+  }
+  
+  .content {
+	padding: 0 18px;
+	display: none;
+	overflow: hidden;
+	background-color: #f1f1f1;
+  }
+
 
 /******************************/
 /*     01. General Styles     */
@@ -2218,9 +2241,10 @@ a:hover.back-to-top {
 	/* end of extra pages */
 }
 /* end of min-width width 1200px */
+
 .schedule-section h2 {
 	font-size: 2.369rem;
-	color: #c69214;
+	color: #2b39bf;
 	margin-top: 0; }
 	@media (min-width: 992px) {
 	  .schedule-section h2 {
@@ -2261,10 +2285,10 @@ a:hover.back-to-top {
 	  width: 45%;
 	  margin: 0 2rem; }
 	.schedule-section .schedule-desktop .calday {
-	  border-top: 8px solid #5e6a71;
+	  border-top: 8px solid #ef60a3;
 	  width: 100%; }
 	  .schedule-section .schedule-desktop .calday h3 {
-		color: #5e6a71;
+		color: #ef60a3;
 		margin: 0;
 		margin-bottom: 0.5rem;
 		margin-top: 1rem;
@@ -2337,4 +2361,3 @@ a:hover.back-to-top {
 	  .schedule-section .schedule-mobile #day-panes #day2-pane {
 		transform: translateX(1000%); }
   
-
