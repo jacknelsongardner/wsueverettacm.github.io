@@ -51,6 +51,17 @@ NEW Colors:
 - Backgrounds - white #fff
 ******************************************/
 
+.verticalcenter {
+    display: table-cell;
+    height: 400px;
+    vertical-align: middle;
+}
+
+.cCenter {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
 /******************************/
 /*     01. General Styles     */
