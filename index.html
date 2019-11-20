@@ -172,7 +172,7 @@
     <!-- Schedule -->
     <div id="Schedule">
         <section class="schedule-section">
-                <div class="schedule-desktop">
+                <div class="schedule-mobile">
                     <div class="left-pane pane">
                         <h2>Flow of Events</h2>
                     <div class="calday">
@@ -237,6 +237,139 @@
                 </div>
             </div>
         </section>
+    </div>
+
+    <!-- FAQ -->
+    <div id="FAQ" class="tabs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>CougHacks FAQ</h2>
+                    <div class="p-heading p-large">
+
+                        <style>
+                            .collapsible {
+                            background-color: #5E6A71;
+                            color: white;
+                            cursor: pointer;
+                            padding: 18px;
+                            width: 100%;
+                            border: 10px;
+                            border-color: black;
+                            text-align: left;
+                            outline: none;
+                            font-size: 15px;
+                            }
+
+                            .active, .collapsible:hover {
+                            background-color: #981E32;
+                            }
+
+                            .collapsible:after {
+                            content: '\002B';
+                            color: white;
+                            font-weight: bold;
+                            float: right;
+                            margin-left: 5px;
+                            }
+
+                            .active:after {
+                            content: "\2212";
+                            }
+
+                            .content {
+                            padding: 0 18px;
+                            max-height: 0;
+                            overflow: hidden;
+                            transition: max-height 0.2s ease-out;
+                            background-color: #f1f1f1;
+                            border: 10px;
+                            border-color: black;
+                            }
+                        </style>
+
+                        <button type="button" class="collapsible">What is a CougHacks?</button>
+                        <div class="content">
+                                <p> CougsHacks is a collegiate level hackathon held at WSU Everett. </p>
+                        </div>
+
+                        <button type="button" class="collapsible">Who can attend?</button>
+                        <div class="content">
+                                <p>All students attending any University, College, or High School can attend.</p>
+                        </div>
+
+                        <button type="button" class="collapsible">How much does admittance cost?</button>
+                        <div class="content">
+                                <p>CougHacks is completely free to attend.</p>
+                        </div>
+
+                        <button type="button" class="collapsible">What should I bring?</button>
+                        <div class="content">
+                                <p>All students are recomended to bring a student ID to be checked in. Additionally students 
+                                        should bring a computer, power strip, toothbrush, change of clothes, and we highly recommend 
+                                        bring a sleeping bag or blanket.</p>
+                        </div>
+
+                        <button type="button" class="collapsible">How big are teams?</button>
+                        <div class="content">
+                                    <p>Team size is to be determined at the current momment.</p>
+                        </div>
+
+                        <button type="button" class="collapsible">What if I don't have a team?</button>
+                        <div class="content">
+                                <p>In the weeks leading up to the event we will hosting activites on our social media to encourage 
+                                    people to form teams. Additionally, during the start of the event we will host a team forming activity 
+                                    to ensure that all attendies have a team.</p>
+                        </div>
+
+                        <button type="button" class="collapsible">What if I don't have an Idea?</button>
+                        <div class="content">
+                                <p> We will preform brainstorming activities for teams that do not have predetermined project ideas.</p>
+                        </div>
+
+                        <button type="button" class="collapsible">Can I work on my project before the event starts?</button>
+                        <div class="content">
+                                <p>No, we highly encourage everyone start their project during the hackathon.</p>
+                        </div>
+
+                        <button type="button" class="collapsible">Does CougHacks provide travel reimbursement?</button>
+                        <div class="content">
+                                <p> Unfortunately, due to budget constraints this year CougHacks will not be able to provide travel reimbursement.</p>
+                        </div>
+
+                        <button type="button" class="collapsible">I have a different question. Who can I ask?</button>
+                        <div class="content">
+                                <p>Please reach out to us via one of our social media platforms or send us an email. We are 
+                                    happy to answer any questions you may have.</p>
+                        </div>
+
+                        <script>
+                            var coll = document.getElementsByClassName("collapsible");
+                            var i;
+
+                            for (i = 0; i < coll.length; i++) {
+                                coll[i].addEventListener("click", function() {
+                                    this.classList.toggle("active");
+                                    var content = this.nextElementSibling;
+                                    if (content.style.display === "block") {
+                                            content.style.display = "none";
+                                        } else {
+                                            content.style.display = "block";
+                                        }
+                                    if (content.style.maxHeight){
+                                    content.style.maxHeight = null;
+                                    } else {
+                                    content.style.maxHeight = content.scrollHeight + "px";
+                                    } 
+                                });
+                            }
+                        </script>
+                    </div>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            </br></br>
+            <div class="row">
+        </div>
     </div>
 
 

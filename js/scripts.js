@@ -353,6 +353,23 @@
         $("#pmsgSubmit").removeClass().addClass(msgClasses).text(msg);
     }
     
+    function collapseScript(){
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+            content.style.display = "none";
+            } else {
+            content.style.display = "block";
+            }
+        });
+        }
+    }
+
 
     /* Back To Top Button */
     // create the back to top button
@@ -370,6 +387,8 @@
 	/* Removes Long Focus On Buttons */
 	$(".button, a, button").mouseup(function() {
 		$(this).blur();
-	});
+    });
+    
+    
 
 })(jQuery);
