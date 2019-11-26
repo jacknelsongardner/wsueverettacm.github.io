@@ -156,14 +156,15 @@
     <div id="partners-sponsors" class="tabs" style="background-color: #e6e6e6">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 class="cCenter"">
+                <div class="col-lg-12" class="cCenter">
                     <h2>Partners and Sponsors</h2>  
-                    <div>
-                        <div margin="0.5"><img style="padding-bottom: 10px;" src="images/SnoCo_Logo.jpg" alt="alternative" height="300"></div>
-                    </div>
-                    <div>
-                        <div><img src="images/Everett_Logo.jpg" alt="alternative" height="300"></div>
-                    </div>
+                    <span>
+                        <div>
+                            <img style="padding-bottom: 10px;" src="images/SnoCo.png" alt="alternative" height="auto"  width="30%" hspace="10">
+                            <img style="padding-bottom: 10px;" src="images/Everett.png" alt="alternative" height="auto" width="30%" hspace="10">
+                            <img style="padding-bottom: 10px;" src="images/EverettLib.png" alt="alternative" height="auto" width="30%" hspace="10">
+                        </div>
+                    </span>
                 </div>
             </div>
         </div>
@@ -397,7 +398,7 @@
                             <h4>Josh LaPierre</h4>
                             <!-- Designation --> 
                             <span class="pos">Chair</span>
-                            <div class="team-socials"> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fab fa-github"></i></a> </div>
+                            <div class="team-socials"> <a href="https://www.linkedin.com/in/josh-lapierre/"><i class="fab fa-linkedin"></i></a></div>
                           </div>
                         </div>
                         <div class="col-md-3 col-sm-6 col-xs-6"> 
@@ -411,7 +412,7 @@
                             <h4>Sarak</h4>
                             <!-- Designation --> 
                             <span class="pos">Vice Chair</span>
-                            <div class="team-socials"> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fab fa-github"></i></a> </div>
+                            <div class="team-socials"> <a href="https://www.linkedin.com/in/sarakvitou-sam/"><i class="fab fa-linkedin"></i></a></div>
                           </div>
                         </div>
                         <div class="col-md-3 col-sm-6 col-xs-6"> 
@@ -439,7 +440,7 @@
                             <h4>Rebecca Rothschild</h4>
                             <!-- Designation --> 
                             <span class="pos">Secretary</span>
-                            <div class="team-socials"> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fab fa-github"></i></a> </div>
+                            <div class="team-socials"> <a href="https://www.linkedin.com/in/rebecca-rothschild-software/"><i class="fab fa-linkedin"></i></a> </div>
                           </div>
                         </div>
                       </div>
@@ -474,17 +475,17 @@
                     <!-- Contact Form -->
                     <form id="contactForm" data-toggle="validator" data-focus="false">
                         <div class="form-group">
-                            <input type="text" class="form-control-input" id="cname" required>
+                            <input type="text" class="form-control-input" id="cname">
                             <label class="label-control" for="cname">Name</label>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control-input" id="cemail" required>
+                            <input type="email" class="form-control-input" id="cemail">
                             <label class="label-control" for="cemail">Email</label>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
+                            <textarea class="form-control-textarea" id="cmessage"></textarea>
                             <label class="label-control" for="cmessage">Your message</label>
                             <div class="help-block with-errors"></div>
                         </div>
@@ -492,12 +493,8 @@
                             <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>I have read and agree to Leno's stated conditions in <a href="privacy-policy.html">Privacy Policy</a> and <a href="hackathon.html">Terms Conditions</a> 
                             <div class="help-block with-errors"></div>
                         </div> -->
-                        <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">SUBMIT MESSAGE</button>
-                        </div>
-                        <div class="form-message">
-                            <div id="cmsgSubmit" class="h3 text-center hidden"></div>
-                        </div>
+                        <input type="submit" class="form-control-submit-button">SUBMIT MESSAGE</input>
+                        
                     </form>
                     <!-- end of contact form -->
 
