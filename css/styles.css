@@ -2299,15 +2299,17 @@ a:hover.back-to-top {
 	  width: 45%;
 	  margin: 0 2rem; }
 	.schedule-section .schedule-desktop .calday {
-	  border-top: 8px solid #ef60a3;
+	  border-top: 8px solid #981E32;
 	  width: 100%; }
 	  .schedule-section .schedule-desktop .calday h3 {
-		color: #ef60a3;
+		color: #981E32;
 		margin: 0;
 		margin-bottom: 0.5rem;
 		margin-top: 1rem;
 		font-size: 2.369rem; }
-  
+  /*
+		CSS for the mobile schedule view
+  */
   .schedule-section .schedule-mobile {
 	margin-top: 5vh;
 	display: block; }
@@ -2336,7 +2338,7 @@ a:hover.back-to-top {
 		padding-bottom: 1.5rem;
 		font-size: 1.777rem;
 		font-weight: 900;
-		color: #ef60a3;
+		color: #981E32;
 		font-family: "Montserrat", sans-serif;
 		opacity: 0.5;
 		border-bottom: 1px #d8d8d8 solid;
@@ -2353,7 +2355,7 @@ a:hover.back-to-top {
 		position: absolute;
 		bottom: 0%;
 		left: 0;
-		background-color: #ef60a3;
+		background-color: #981E32;
 		transition: all 0.2s ease-in-out; }
 		.schedule-section .schedule-mobile #day-selector #active-day-marker.day2 {
 		  left: 50%; }
