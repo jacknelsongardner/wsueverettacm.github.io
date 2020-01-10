@@ -1,4 +1,4 @@
- Template: Leno - Mobile App HTML Landing Page Template
+ /*Template: Leno - Mobile App HTML Landing Page Template
    Author: Inovatik
    Created: Mar 2019
    Description: Master CSS file
@@ -51,7 +51,6 @@ NEW Colors:
 - Backgrounds - white #fff
 ******************************************/
 
-<<<<<<< HEAD
 .verticalcenter {
     display: table-cell;
     height: 400px;
@@ -63,7 +62,6 @@ NEW Colors:
     align-items: center;
     flex-wrap: wrap;
 }
-=======
 .collapsible {
 	background-color: #777;
 	color: white;
@@ -87,7 +85,6 @@ NEW Colors:
 	background-color: #f1f1f1;
   }
 
->>>>>>> 8a5f8f0337efe495320dc8c3d83c2888f6840cca
 
 /******************************/
 /*     01. General Styles     */
@@ -2256,124 +2253,5 @@ a:hover.back-to-top {
 }
 /* end of min-width width 1200px */
 
-.schedule-section h2 {
-	font-size: 2.369rem;
-	color: #2b39bf;
-	margin-top: 0; }
-	@media (min-width: 992px) {
-	  .schedule-section h2 {
-		font-size: 3rem; } }
-  
-  .schedule-section .date {
-	font-size: 1.333rem;
-	margin: 0.5rem 0;
-	font-weight: 600; }
-  
-  .schedule-section .events-container {
-	margin-top: 1rem; }
-	.schedule-section .events-container .event {
-	  display: flex;
-	  justify-content: space-between;
-	  font-weight: 300;
-	  margin: 8px 0;
-	  padding: 0.25rem 0; }
-	  .schedule-section .events-container .event .event-name,
-	  .schedule-section .events-container .event .event-time {
-		font-family: "DM Sans", sans-serif; }
-  
-  .schedule-section .schedule-desktop {
-	padding: 0 1.3rem;
-	display: none;
-	margin: 15vh 0 10vh 0;
-	justify-content: space-between; }
-	@media (min-width: 768px) {
-	  .schedule-section .schedule-desktop {
-		padding: 0 1.3rem; } }
-	@media (min-width: 768px) {
-	  .schedule-section .schedule-desktop {
-		display: flex; } }
-	@media (min-width: 992px) {
-	  .schedule-section .schedule-desktop {
-		padding: 0 5rem !important; } }
-	.schedule-section .schedule-desktop .pane {
-	  width: 45%;
-	  margin: 0 2rem; }
-	.schedule-section .schedule-desktop .calday {
-	  border-top: 8px solid #981E32;
-	  width: 100%; }
-	  .schedule-section .schedule-desktop .calday h3 {
-		color: #981E32;
-		margin: 0;
-		margin-bottom: 0.5rem;
-		margin-top: 1rem;
-		font-size: 2.369rem; }
-  /*
-		CSS for the mobile schedule view
-  */
-  .schedule-section .schedule-mobile {
-	margin-top: 5vh;
-	display: block; }
-	@media (min-width: 768px) {
-	  .schedule-section .schedule-mobile {
-		display: none; } }
-	@media (max-width: 576px) {
-	  .schedule-section .schedule-mobile .date {
-		font-size: 1rem !important; } }
-	.schedule-section .schedule-mobile h2 {
-	  text-align: center;
-	  width: 100%;
-	  font-size: 1.75rem !important; }
-	.schedule-section .schedule-mobile #day-selector {
-	  width: 100%;
-	  display: flex;
-	  flex-direction: row;
-	  position: relative; }
-	  .schedule-section .schedule-mobile #day-selector .day {
-		width: 50%;
-		outline: none;
-		border: none;
-		background: transparent;
-		padding: 0;
-		padding-bottom: 0px;
-		padding-bottom: 1.5rem;
-		font-size: 1.777rem;
-		font-weight: 900;
-		color: #981E32;
-		font-family: "Montserrat", sans-serif;
-		opacity: 0.5;
-		border-bottom: 1px #d8d8d8 solid;
-		cursor: pointer;
-		transition: 0.2s all ease-in-out; }
-		.schedule-section .schedule-mobile #day-selector .day:hover, .schedule-section .schedule-mobile #day-selector .day.active {
-		  opacity: 1; }
-		@media (max-width: 576px) {
-		  .schedule-section .schedule-mobile #day-selector .day {
-			font-size: 1.25rem; } }
-	  .schedule-section .schedule-mobile #day-selector #active-day-marker {
-		width: 50%;
-		height: 10%;
-		position: absolute;
-		bottom: 0%;
-		left: 0;
-		background-color: #981E32;
-		transition: all 0.2s ease-in-out; }
-		.schedule-section .schedule-mobile #day-selector #active-day-marker.day2 {
-		  left: 50%; }
-	.schedule-section .schedule-mobile #day-panes {
-	  position: relative; }
-	  .schedule-section .schedule-mobile #day-panes .calday {
-		padding: 2rem 1.3rem;
-		transition: all 0.2s ease-in-out;
-		position: absolute; }
-		@media (min-width: 768px) {
-		  .schedule-section .schedule-mobile #day-panes .calday {
-			padding: 2rem 1.3rem; } }
-		.schedule-section .schedule-mobile #day-panes .calday.active {
-		  position: relative;
-		  transform: translateX(0) !important;
-		  display: block; }
-	  .schedule-section .schedule-mobile #day-panes #day1-pane {
-		transform: translateX(-1000%); }
-	  .schedule-section .schedule-mobile #day-panes #day2-pane {
-		transform: translateX(1000%); }
+
   
