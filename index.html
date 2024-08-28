@@ -1,700 +1,740 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="Landing page for ACM Hackathon" content="" />
+        <meta name="Jack Nelson Gardner" content="" />
+        <title>WSU - CougHacks</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/powerLogo.png" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- SEO Meta Tags -->
-    <meta name="description"
-        content="CougHacks is a collegiate level hackathon held in Everett Washington focused on Community Enhancement">
-    <meta name="author" content="Inovatik">
-    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
-    <meta property="og:site_name" content="CougHacks - Washington State University Everett Hackathon" />
-    <!-- website name -->
-    <meta property="og:title" content="CougHacks - WSU Everett Hackathon" />
-    <!-- title shown in the actual shared post -->
-    <meta property="og:description"
-        content="CougHacks is a collegiate level hackathon held in Everett, Washington focused on Community Enhancement" />
-    <!-- description shown in the actual shared post -->
-    <meta property="og:image" content="" />
-    <!-- image link, make sure it's jpg -->
-    <meta property="og:url" content="https://coughacks.io" />
-    <!-- where do you want your post to link to -->
-    <meta property="og:type" content="article" />
-    <!-- Website Title -->
-    <title>CougHacks</title>
-    <!-- Styles -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/fontawesome-all.css" rel="stylesheet">
-    <link href="css/swiper.css" rel="stylesheet">
-    <link href="css/magnific-popup.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link href="webfonts/font-awesome.min.css" rel="stylesheet">
-    <!-- Favicon  -->
-    <link rel="icon" href="images/CougHacksFavicon.ico">
-</head>
+    <style>
+        .carousel-container {
+            max-width: 800px;
+            margin: auto;
+        }
+        .carousel-caption-custom {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+        .carousel-inner img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
 
-<body data-spy="scroll" data-target=".fixed-top">
-    <!-- Preloader -->
-    <div class="spinner-wrapper">
-        <div class="spinner">
-            <div class="bounce1"></div>
-            <div class="bounce2"></div>
-            <div class="bounce3"></div>
-        </div>
-    </div>
-    <!-- end of preloader -->
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
-        <!-- Text Logo - Use this if you don't have a graphic logo -->
-        <!-- Image Logo -->
-        <!---<a class="navbar-brand logo-image" href="index.html"><img src="images/logo_8.PNG" alt="alternative" width="200" height="200"></a>-->
-        <a class="navbar-brand logo-text page-scroll" href="https://coughacks.io/">CougHacks @ WSU Everett</a>
-        <!-- Mobile Menu Toggle Button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-awesome fas fa-bars"></span>
-            <span class="navbar-toggler-awesome fas fa-times"></span>
-        </button>
-        <!-- end of mobile menu toggle button -->
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#header">HOME <span class="sr-only">(current)</span>
-                    </a>
+.cool-font {
+            font-family: cursive;
+            font-size: 25px;
+            font-weight: bold;
+        }
+.countdown {
+            text-align: center;
+        }
+        .time-unit {
+            display: inline-block;
+            margin: 0 5px;
+        }
+        .time-label {
+            display: block;
+            font-size: small;
+            font-weight: bold;
+        }
+        .time-value {
+            font-size: xx-large;
+        }
+        .separator {
+            font-size: xx-large;
+        }
+
+        .circle {
+            width: 450px;
+            height: 450px;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            align-items: center;
+            justify-content: center;
+            border: 5px solid #ffffff;
+            margin: 0 auto;
+            background-color: #f8f9fa;
+        }
+
+        .btn.collapsible {
+      width: 100%;
+      text-align: left;
+    }
+
+    .faq-list {
+            list-style-type: none;
+            padding: 0;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        .faq-item {
+            background-color: #f0f0f0;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .faq-question {
+            cursor: pointer;
+            padding: 15px;
+            font-weight: bold;
+        }
+        .faq-answer {
+            display: none;
+            padding: 10px 15px;
+        }
+    /* Style for the content inside collapsible */
+    .content {
+      display: none;
+      padding: 10px;
+      border: 1px solid #ddd;
+      background-color: #f1f1f1;
+    }
+    /* Adjusting the style for the active/collapsed state */
+    .content.show {
+      display: block;
+    }
+      </style>
+
+    <body id="page-top">
+        
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a href="#page-top">
+                    <img src="assets/img/coughackslogowhite.png" style="max-width: 200px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        
+                        <li class="nav-item"><a class="nav-link" href="#timeline">Timeline</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Winners</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sponsors">Sponsors</a></li>
+                        
+                        <a class="btn btn-danger btn-sm text-uppercase d-flex align-items-center justify-content-center" style="font-family: Arial, Helvetica, sans-serif; height: 40px; line-height: 40px;" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdqsgOinAYh6Fo6r27HNbgC4jeKKchEVYE7j2XA0hgcAOdo6g/alreadyresponded">Register</a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Masthead-->
+        <header class="masthead" id="mast">
+
+
+
+
+            <div class="container" style="display: inline;">
+                <div class="circle mb-3 ">
+                    
+                    <div class="mb-2">
+                        <img src="assets/img/cougLogo.png" style="max-width: 250px;">
+                    </div>
+
+                    <div class="mb-3">
+                        <img src="assets/img/powerLogo.png" style="max-width: 150px;">
+                    </div>
+
+                    <p style="font-size: 30px; color: black; font-family: Arial, Helvetica, sans-serif; color: gray;" >April 1st, 2025, 8:00 AM</p>
+                    <p style="font-size: 20px; color: black; font-family: Arial, Helvetica, sans-serif; color: gray;" >WSU Everett Campus</p>
+                    
+                </div>
+
+                <div class="mb-2">
+                    <!--<div class="masthead-heading text-uppercase">It's Nice To Meet You</div>-->
+                        <a class="btn btn-danger btn-xl text-uppercase" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdqsgOinAYh6Fo6r27HNbgC4jeKKchEVYE7j2XA0hgcAOdo6g/alreadyresponded">Register 2025</a>
+                    </div>
+              </div>
+
+              
+              
+
+              
+        </header>
+        
+        <!-- About-->
+        <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center mb-1" style="text-align: center;">
+                    <div class="container">
+                        <div class="countdown" style="text-align: center; margin-top: 30px; ">
+                            
+                            
+                            <h2 style="font-size: 70px;">Come and <span style="color: rgb(170, 24, 24); font-size: 100px; font-family: 'Courier New', Courier, monospace;">CODE</span> with us</h2>
+                    
+                            <div style="text-align: center; margin-top: 50px;">
+                    
+                                <div>
+                                    <div class="carousel-container" style="max-height: 400px;">
+                                        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel" data-interval="2000">
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                            </ol>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="assets/img/winners.png" class="d-block w-100" alt="...">
+                                                    <div class="carousel-caption-custom">
+                                                        BYOL (Bring your own laptop)
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/workers.png" class="d-block w-100" alt="...">
+                                                    <div class="carousel-caption-custom">
+                                                        Win over 5 dollars in prizes!
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/room.jpg" class="d-block w-100" alt="...">
+                                                    <div class="carousel-caption-custom">
+                                                        24 hours coding, no pay!
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+                
+                                    </div>
+                                
+                                    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+                                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                
+                
+                                    
+                                </div>
+                                </div>
+
+
+
+                            <div>
+                                <p style="font-size: 70px; " >April 1st, 8:00 AM</p>
+        
+                            </div>
+                            
+                            
+        
+                            <div id="timer" class="time" style="margin-top: 30px;">
+                                <div class="time-unit">
+                                    <span class="time-label">MONTHS</span>
+                                    <span id="months" class="time-value">00</span>
+                                </div>
+                                <span class="separator">:</span>
+                                <div class="time-unit">
+                                    <span class="time-label">DAYS</span>
+                                    <span id="days" class="time-value">00</span>
+                                </div>
+                                <span class="separator">:</span>
+                                <div class="time-unit">
+                                    <span class="time-label">HOURS</span>
+                                    <span id="hours" class="time-value">00</span>
+                                </div>
+                                <span class="separator">:</span>
+                                <div class="time-unit">
+                                    <span class="time-label">MINUTES</span>
+                                    <span id="minutes" class="time-value">00</span>
+                                </div>
+                                <span class="separator">:</span>
+                                <div class="time-unit">
+                                    <span class="time-label">SECONDS</span>
+                                    <span id="seconds" class="time-value">00</span>
+                                </div>
+                            </div>
+        
+                            <div style="text-align: center; margin-top: 30px;">
+                                <a class="btn btn-danger btn-xl text-uppercase" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdqsgOinAYh6Fo6r27HNbgC4jeKKchEVYE7j2XA0hgcAOdo6g/alreadyresponded">Set the Date</a>
+                            </div>
+        
+                          </div>
+            
+                          <script>
+                            // Set the date we're counting down to
+                            var countDownDate = new Date("April 1, 2025 00:00:00").getTime();
+                        
+                            // Update the countdown every 1 second
+                            var x = setInterval(function() {
+                              // Get today's date and time
+                              var now = new Date().getTime();
+                        
+                              // Find the distance between now and the countdown date
+                              var distance = countDownDate - now;
+                        
+                              // Time calculations for months, days, hours, minutes and seconds
+                              var months = Math.floor(distance / (1000 * 60 * 60 * 24 * 30));
+                              var days = Math.floor((distance % (1000 * 60 * 60 * 24 * 30)) / (1000 * 60 * 60 * 24));
+                              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                                var seconds = Math.floor((distance % (1000 * 60)) / (1000));
+            
+                              // Display the result in the element with id="timer"
+                              document.getElementById("months").innerHTML = months;
+                              document.getElementById("days").innerHTML = days;
+                              document.getElementById("hours").innerHTML = hours;
+                              document.getElementById("minutes").innerHTML = minutes;
+                              document.getElementById("seconds").innerHTML = seconds;
+        
+                              // If the countdown is over, write some text
+                              if (distance < 0) {
+                                clearInterval(x);
+                                document.getElementById("timer").innerHTML = "EXPIRED";
+                              }
+                            }, 1000);
+                          </script>
+                          
+        
+                        
+                    </div>
+                
+                
+                </div>
+
+
+               
+
+                
+
+                
+            
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const faqQuestions = document.querySelectorAll('.faq-question');
+                        faqQuestions.forEach(question => {
+                            question.addEventListener('click', function() {
+                                const answer = this.nextElementSibling;
+                                answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
+                            });
+                        });
+                    });
+                </script>
+                  
+                  
+
+
+            </div>
+
+            
+        </section>
+
+
+
+        <!--Timeline-->
+        <section class="page-section" id="timeline">
+            
+            <div class="text-center mb-1" >
+               <h2 class="section-heading text-uppercase" style="margin-bottom: 80px;">Timeline</h2>
+                
+            </div>
+
+            
+            <ul class="timeline">
+
+                <li>
+                    <div class="timeline-image" ><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>8:00 AM</h4>
+                            <h4 class="subheading">The game begins</h4>
+                        </div>
+                        <div class="timeline-body"><p class="text-muted">Eat breakfast, meet with teams, and get things started!</p></div>
+                    </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#about">ABOUT</a>
+
+                <li class="timeline-inverted">
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>1.00 PM</h4>
+                            <h4 class="subheading">Things get hot</h4>
+                        </div>
+                        <div class="timeline-body"><p class="text-muted">Planning, coding, emotional breakdown, start again.</p></div>
+                    </div>
                 </li>
-                <!-- <li class="nav-item"><a class="nav-link page-scroll" href="#partners-sponsors">PARTNERS / SPONSORS</a></li><li class="nav-item"><a class="nav-link page-scroll" href="#our_team">OUR TEAM</a></li> -->
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#contact">CONTACT</a>
+
+                <li>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>December 2015</h4>
+                            <h4 class="subheading">12:00 AM</h4>
+                        </div>
+                        <div class="timeline-body"><p class="text-muted">Your eyes burn, your fingers ache, will you make it till morning?</p></div>
+                    </div>
+                </li>
+
+                <li class="timeline-inverted">
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>3:00 PM</h4>
+                            <h4 class="subheading">Judgement day</h4>
+                        </div>
+                        <div class="timeline-body"><p class="text-muted">The competitions over but don't snooze yet. Ready or not, the judges are waiting. </p></div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image">
+                        <h4>
+                            Win or lose
+                            <br />
+                            you get
+                            <br />
+                            free SWAG!
+                        </h4>
+                    </div>
                 </li>
             </ul>
-            <span class="nav-item social-icons">
-                <span class="fa-stack">
-                    <a href="https://www.facebook.com/ACM-WSU-Everett-111068846968912/">
-                        <i class="fas fa-circle fa-stack-2x"></i>
-                        <i class="fab fa-facebook-f fa-stack-1x"></i>
-                    </a>
-                </span>
-                <span class="fa-stack">
-                    <a href="https://twitter.com/AcmWsu">
-                        <i class="fas fa-circle fa-stack-2x"></i>
-                        <i class="fab fa-twitter fa-stack-1x"></i>
-                    </a>
-                </span>
-            </span>
-        </div>
-    </nav>
-    <!-- end of navbar -->
-    <!-- end of navigation -->
-    <!-- Header -->
-    <header id="header" class="header">
-        <div class="header-content">
+        </section>
+        
+        <section class="page-section" id="faq">
+            <div style="text-align: center;">
+                <h1>FAQ</h1>
+            </div>
+                
+            <div >
+                <ul class="faq-list">
+                
+                    <li class="faq-item">
+                        <div class="faq-question">How much is the entry fee?</div>
+                        <div class="faq-answer">Entry is free, but any donations to next years hackathon are much apreciated. We also accept hugs.</div>
+                    </li>
+                    <li class="faq-item">
+                        <div class="faq-question">When will winners be announced?</div>
+                        <div class="faq-answer">After the competition's over, duh :P</div>
+                    </li>
+                    <li class="faq-item">
+                        <div class="faq-question">But I don't have a team</div>
+                        <div class="faq-answer">Then you're screwed. Jk, forming teams is part of the event, so be prepared to make new friends (and enemies)!</div>
+                    </li>
+                    <li class="faq-item">
+                        <div class="faq-question">What's the theme?</div>
+                        <div class="faq-answer">Shhhh! It's a secret. The theme will be announced during the opening ceremony.</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+                    
+                <h2 class="section-heading text-uppercase">WSU Everett</h2>
+
+                <img src="assets/img/building.jpg" alt="" style="max-height: 300px;">
+                <a href="https://www.google.com/maps/dir/47.9787228,-122.1113289/wsu+everett/@47.9861771,-122.237609,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x54855532d062dd75:0xd7e665a79c836839!2m2!1d-122.1974382!2d48.0051283?entry=ttu">
+                    <img src="assets/img/map.png" alt="" style="max-height: 300px;">
+                </a>
+                <p style="font-size: x-large; margin-top: 20px;">915 N Broadway, Everett, WA 98201
+                </p>
+                
+            </div>
+            
+            <div style="text-align: center; margin-top: 25px;">
+                <a class="btn btn-danger btn-sm text-uppercase" target="_blank" href="https://www.google.com/maps/dir/47.9787228,-122.1113289/wsu+everett/@47.9861771,-122.237609,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x54855532d062dd75:0xd7e665a79c836839!2m2!1d-122.1974382!2d48.0051283?entry=ttu">Get Directions</a>
+               
+            </div>
+           
+        </section>
+        
+
+        <!-- Past Projects Grid-->
+        <section class="page-section bg-light" id="portfolio">
             <div class="container">
+                <div class="text-center">
+                    <h1 class="section-heading text-uppercase">Past Winners</h2>
+                    <h3 class="section-subheading text-muted">Browse projects that won in years prior</h3>
+                </div>
                 <div class="row">
-                    <div class="col-lg-6">
-                        <div class="text-container">
-                            <h1>CougHacks</h1>
-                            <p class="p-large">April 5th-6th, 2024 | Washington State University, Everett WA.</p>
-                            <p class="p-large">Start Time: 11:00 A.M.</p>
-                            <a class="btn btn-danger btn-lg" style="margin: 0px 20px" target="_blank"
-                                href="https://docs.google.com/forms/d/e/1FAIpQLSdqsgOinAYh6Fo6r27HNbgC4jeKKchEVYE7j2XA0hgcAOdo6g/viewform?usp=sf_link">Register</a>
-                            <!-- <a hidden="true" class="btn-solid-reg"
-                                href="https://www.eventbrite.com/e/coughacks-2020-volunteers-tickets-82908394239">Volunteer</a> -->
-                            <!---<a class="btn-solid-lg page-scroll" href="#your-link"><i class="fab fa-google-play"></i>PLAY STORE</a> -->
-                        </div>
-                    </div>
-                    <!-- end of col -->
-                    <div class="col-lg-6">
-                        <div class="image-container">
-                            <!---<img class="img-fluid" src="images/logo_8.PNG" alt="alternative">-->
-                        </div>
-                        <!-- end of image-container -->
-                        <div>
-                            <img style="padding-bottom: 10px;" src="images/CougHacksLogo.png" alt="alternative"
-                                height="auto" width="90%" style="margin: 0px 20px">
-                        </div>
-                    </div>
-                    <!-- end of col -->
-                </div>
-                <!-- end of row -->
-            </div>
-            <!-- end of container -->
-        </div>
-        <!-- end of header-content -->
-    </header>
-    <!-- end of header -->
-    <!-- end of header -->
-    <!-- About -->
-    <div id="about" class="tabs">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <!-- <h2 style="color: #981e32; margin-bottom: 2em;">Due to the pandemic, CougHacks will be hosted as a virtual event</h2> -->
-                    <h2>About CougHacks</h2>
-                    <div class="p-heading p-large"> CougHacks is free for all participants. You do not need to be an
-                        expert programmer to participate, just bring a desire to learn more about technology! Hardware
-                        will not be provided to participants, so bring a laptop. The event begins April 5th at 11:00
-                        A.M. and ends on April 6th at 6:00 P.M. Participants are encouraged to stay for the entire event
-                        to submit their project for judging and be eligible for prizes. Teams can have up to 4 members.
-                        You can prearrange teams prior to the event or we can help teams form as projects begin. Sign up
-                        using the button above.
-                        <br><br>
-                        <a href="./Hackathon_Handout.pdf" class="hhl">Click here for the Hackathon Handout regarding
-                            more information.
-                        </a>
-                        <style type="text/css">
-                            .hhl {
-                                font-weight: 800;
-                            }
-                        </style>
-                    </div>
-                </div>
-                <!-- end of col -->
-            </div>
-            <!-- end of row -->
-        </div>
-        <!-- Schedule -->
-        <div class="form">
-            <div class="zpcontainer">
-                <div data-element-id="elm_NDZr0DkoUgS6gpVf8Mcf1A" data-element-type="row"
-                    class="zprow zpalign-items-flex-start zpjustify-content-flex-start ">
-                    <style type="text/css">
-                        [data-element-id="elm_NDZr0DkoUgS6gpVf8Mcf1A"].zprow {
-                            border-radius: 1px;
-                        }
-                    </style>
-                    <div data-element-id="elm_0YJS3m6EAYWCnPh3TaRxqg" data-element-type="column"
-                        class="zpelem-col zpcol-md-6 zpcol-sm-12 zpalign-self- zpdefault-section zpdefault-section-bg ">
-                        <style type="text/css">
-                            [data-element-id="elm_0YJS3m6EAYWCnPh3TaRxqg"].zpelem-col {}
-
-                            @media (min-width:992px) {
-                                [data-element-id="elm_0YJS3m6EAYWCnPh3TaRxqg"].zpelem-col {}
-                            }
-                        </style>
-                        <div data-element-id="elm_lXNeDJR84OLQSVqJfKLYpg" data-element-type="heading"
-                            class="zpelement zpelem-heading zp-hidden-md ">
-                            <style>
-                                [data-element-id="elm_lXNeDJR84OLQSVqJfKLYpg"] .zpheading {
-                                    color: #2D0B0B;
-                                    line-height: 30px;
-                                }
-
-                                [data-element-id="elm_lXNeDJR84OLQSVqJfKLYpg"].zpelem-heading {
-                                    border-radius: 1px;
-                                }
-
-                                [data-element-id="elm_lXNeDJR84OLQSVqJfKLYpg"] .zpheading:after,
-                                [data-element-id="elm_lXNeDJR84OLQSVqJfKLYpg"] .zpheading:before {
-                                    background-color: #2D0B0B !important;
-                                }
-                            </style>
-                            <h2 class="zpheading zpheading-style-none zpheading-align-left " data-editor="true">
-                                <span style="font-size:56px;font-family:Orbitron, sans-serif;">Schedule</span>
-                                <br>
-                            </h2>
-                        </div>
-                        <div data-element-id="elm_Tfi3cN6gPxWIxVI1DYUrrg" data-element-type="box"
-                            class="zpelem-box zpelement zpbox-container box-container zplight-section zplight-section-bg box-container ">
-                            <style type="text/css">
-                                [data-element-id="elm_Tfi3cN6gPxWIxVI1DYUrrg"].zpelem-box {
-                                    background-color: #e6e6e6;
-                                    border-style: solid;
-                                    border-color: #e6e6e6;
-                                    border-width: 1px;
-                                    border-radius: 35px;
-                                }
-
-                                @media (min-width:992px) {
-                                    [data-element-id="elm_Tfi3cN6gPxWIxVI1DYUrrg"].zpelem-box {}
-                                }
-                            </style>
-                            <div data-element-id="elm_jtddQsCJVVTJLFQ2orUC1w" data-element-type="heading"
-                                class="zpelement zpelem-heading ">
-                                <style>
-                                    [data-element-id="elm_jtddQsCJVVTJLFQ2orUC1w"] .zpheading {
-                                        color: #000000;
-                                        line-height: 30px;
-                                    }
-
-                                    [data-element-id="elm_jtddQsCJVVTJLFQ2orUC1w"].zpelem-heading {
-                                        border-radius: 1px;
-                                    }
-
-                                    [data-element-id="elm_jtddQsCJVVTJLFQ2orUC1w"] .zpheading:after,
-                                    [data-element-id="elm_jtddQsCJVVTJLFQ2orUC1w"] .zpheading:before {
-                                        background-color: #000000 !important;
-                                    }
-                                </style>
-                                <h2 class="zpheading zpheading-style-none zpheading-align-left " data-editor="true">
-                                    <span style="font-family:Rubik, sans-serif;">Day 1 <br>​ <span
-                                            style="font-size:24px;">April 5th</span>
-                                    </span>
-                                </h2>
-                            </div>
-                            <div data-element-id="elm_KDSjsz4toHvoe5nP1r6OYA" data-element-type="text"
-                                class="zpelement zpelem-text ">
-                                <style>
-                                    [data-element-id="elm_KDSjsz4toHvoe5nP1r6OYA"].zpelem-text {
-                                        color: rgba(0, 0, 0, 0.79);
-                                        border-radius: 1px;
-                                    }
-                                </style>
-                                <div class="zptext zptext-align-left " data-editor="true">
-                                    <p>
-                                        <span style="font-size:20px;font-family:Rubik, sans-serif;">11:00 A.M.:
-                                            Opening
-                                            Ceremony and Serve Lunch (Brooklyn Bros. Pizzeria)</span>
-                                    </p>
-                                    <p>
-                                        <span style="font-size:20px;font-family:Rubik, sans-serif;">12:00 P.M.:
-                                            Hackathon Start</span>
-                                    </p>
-                                    <p>
-                                        <span style="font-size:20px;font-family:Rubik, sans-serif;">4:00 P.M.: Despi
-                                            Delite Bakery Donuts and Participation Prize</span>
-                                    </p>
-                                    <p>
-                                        <span style="font-size:20px;font-family:Rubik, sans-serif;">8:00 P.M.: Serve
-                                            Dinner (Panda Express)</span>
-                                    </p>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
+                                <img class="img-fluid" src="assets/img/portfolio/1.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">NightTerrors</div>
+                                <div class="portfolio-caption-subheading text-muted">Videogame</div>
                             </div>
                         </div>
                     </div>
-                    <div data-element-id="elm_U30nqL_4MOs2MKF-6JC4kg" data-element-type="column"
-                        class="zpelem-col zpcol-md-6 zpcol-sm-12 zpalign-self- zpdefault-section zpdefault-section-bg ">
-                        <style type="text/css">
-                            [data-element-id="elm_U30nqL_4MOs2MKF-6JC4kg"].zpelem-col {
-                                border-radius: 1px;
-                            }
-
-                            @media (min-width:992px) {
-                                [data-element-id="elm_U30nqL_4MOs2MKF-6JC4kg"].zpelem-col {}
-                            }
-                        </style>
-                        <div data-element-id="elm_oGO76uDuVHl_YPWeA1XdAg" data-element-type="box"
-                            class="zpelem-box zpelement zpbox-container box-container zplight-section zplight-section-bg box-container ">
-                            <style type="text/css">
-                                [data-element-id="elm_oGO76uDuVHl_YPWeA1XdAg"].zpelem-box {
-                                    border-radius: 1px;
-                                }
-
-                                @media (min-width:992px) {
-                                    [data-element-id="elm_oGO76uDuVHl_YPWeA1XdAg"].zpelem-box {}
-                                }
-                            </style>
-                            <div data-element-id="elm_F87q8VxlUCIqo_iJ9lQMMA" data-element-type="heading"
-                                class="zpelement zpelem-heading zp-hidden-sm zp-hidden-xs ">
-                                <style>
-                                    [data-element-id="elm_F87q8VxlUCIqo_iJ9lQMMA"] .zpheading {
-                                        color: #2D0B0B;
-                                        line-height: 30px;
-                                    }
-
-                                    [data-element-id="elm_F87q8VxlUCIqo_iJ9lQMMA"].zpelem-heading {
-                                        border-radius: 1px;
-                                    }
-
-                                    [data-element-id="elm_F87q8VxlUCIqo_iJ9lQMMA"] .zpheading:after,
-                                    [data-element-id="elm_F87q8VxlUCIqo_iJ9lQMMA"] .zpheading:before {
-                                        background-color: #2D0B0B !important;
-                                    }
-                                </style>
-                                <h2 class="zpheading zpheading-style-none zpheading-align-left " data-editor="true">
-                                    <span style="font-size:56px;font-family:Orbitron, sans-serif;">Schedule</span>
-                                    <br>
-                                </h2>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/2.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">TetrisKnight</div>
+                                <div class="portfolio-caption-subheading text-muted">Puzzle game</div>
                             </div>
                         </div>
-                        <div data-element-id="elm_ROHTd4HMq1tnHactDpxSkg" data-element-type="box"
-                            class="zpelem-box zpelement zpbox-container box-container zplight-section zplight-section-bg box-container ">
-                            <style type="text/css">
-                                [data-element-id="elm_ROHTd4HMq1tnHactDpxSkg"].zpelem-box {
-                                    background-color: #e6e6e6;
-                                    border-style: solid;
-                                    border-color: #e6e6e6;
-                                    border-width: 1px;
-                                    border-radius: 35px;
-                                }
-
-                                @media (min-width:992px) {
-                                    [data-element-id="elm_ROHTd4HMq1tnHactDpxSkg"].zpelem-box {}
-                                }
-                            </style>
-                            <div data-element-id="elm_JrpbXRYYrqwB7FPoh4GmcQ" data-element-type="heading"
-                                class="zpelement zpelem-heading ">
-                                <style>
-                                    [data-element-id="elm_JrpbXRYYrqwB7FPoh4GmcQ"] .zpheading {
-                                        color: #2D0B0B;
-                                        line-height: 30px;
-                                    }
-
-                                    [data-element-id="elm_JrpbXRYYrqwB7FPoh4GmcQ"].zpelem-heading {
-                                        border-radius: 1px;
-                                    }
-
-                                    [data-element-id="elm_JrpbXRYYrqwB7FPoh4GmcQ"] .zpheading:after,
-                                    [data-element-id="elm_JrpbXRYYrqwB7FPoh4GmcQ"] .zpheading:before {
-                                        background-color: #2D0B0B !important;
-                                    }
-                                </style>
-                                <h2 class="zpheading zpheading-style-none zpheading-align-left " data-editor="true">
-                                    <span style="font-family:Rubik, sans-serif;">Day 2 <br>
-                                        <span style="font-size:24px;">April 6th</span>
-                                    </span>
-                                </h2>
-                            </div>
-                            <div data-element-id="elm_XBxkslFik_py_JbfitPWww" data-element-type="text"
-                                class="zpelement zpelem-text ">
-                                <style>
-                                    [data-element-id="elm_XBxkslFik_py_JbfitPWww"].zpelem-text {
-                                        color: rgba(0, 0, 0, 0.9);
-                                        border-radius: 1px;
-                                    }
-                                </style>
-                                <div class="zptext zptext-align-left " data-editor="true">
-                                    <p>
-                                        <span style="font-size:20px;font-family:Rubik, sans-serif;">12:00 A.M.:
-                                            Midnight
-                                            Cookies and Participation Prizes</span>
-                                    </p>
-                                    <p>
-                                        <span style="font-size:20px;font-family:Rubik, sans-serif;">4:00 A.M.: Ice
-                                            Cream
-                                            and Participation Prize</span>
-                                    </p>
-                                    <p>
-                                        <span style="font-size:20px;font-family:Rubik, sans-serif;">8:00 A.M.: Serve
-                                            Breakfast (Panera Bread)</span>
-                                    </p>
-                                    <p>
-                                        <span style="font-size:20px;font-family:Rubik, sans-serif;">12:00 P.M.:
-                                            Hackathon Ends and Lunch (Olive Garden)</span>
-                                    </p>
-                                    <p>
-                                        <span style="font-size:20px;font-family:Rubik, sans-serif;">1:00 P.M.:
-                                            Judging</span>
-                                    </p>
-                                    <p>
-                                        <span style="font-size:20px;font-family:Rubik, sans-serif;">6:00 P.M.:
-                                            Closing
-                                            Ceremony</span>
-                                    </p>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
+                                <img class="img-fluid" src="assets/img/portfolio/3.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">FishHead</div>
+                                <div class="portfolio-caption-subheading text-muted">Personal Sleep Tracker</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <!-- Portfolio item 4-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/4.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">NagTracker</div>
+                                <div class="portfolio-caption-subheading text-muted">Family Management App</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <!-- Portfolio item 5-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/5.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Southwest</div>
+                                <div class="portfolio-caption-subheading text-muted">Using AI to arrange airplane seats</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <!-- Portfolio item 6-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/6.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Window</div>
+                                <div class="portfolio-caption-subheading text-muted">Photo sorter</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Prizes -->
-        <div id="about" class="tabs">
+        </section>
+
+        <!-- Team-->
+        <section class="page-section bg-light" id="team">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h2>Prizes:</h2>
-                        <div class="p-heading p-large">
-                            <ul>
-                                <div>
-                                    <li>HTC Vive VR Headset</li>
-                                    <li>RTX 4060 Graphics Card</li>
-                                    <li>Nintendo Switch</li>
-                                    <li>Xbox Series S - Starter Bundle</li>
-                                    <li>Apple Watch SE</li>
-                                    <li>Asus Portable Monitor</li>
-                                </div>
-                                <div>
-                                    <li>Sony Headphones</li>
-                                    <li>Raspberry Pi 5</li>
-                                    <li>JBL Flip 5 Portable Speaker</li>
-                                    <li>Apple Airpods</li>
-                                    <li>Glorious Model 0 V2 Gaming Mouse</li>
-                                    <li>Logitech MX Anywhere 3S Mouse</li>
-                                </div>
-                            </ul>
-                        </div>
-                        <style>
-                            div.p-heading ul div {
-                                display: inline-block;
-                                list-style: none;
-                            }
-
-                            div.p-heading ul div li {
-                                list-style: none;
-                                font-weight: 800;
-                            }
-                        </style>
-                    </div>
-                    <!-- end of col -->
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
+                    <h3 class="section-subheading text-muted">Not to brag, but we're pretty cool!</h3>
                 </div>
-                <!-- end of row -->
-            </div>
-        </div>
 
-        <!-- FAQ -->
-        <div id="FAQ" class="tabs" style="background-image: url(images/background.jpg);">
-            <div class="container">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <h2>Frequently Asked Questions (FAQ)</h2>
-                        <div class="p-heading p-large">
-                            <style>
-                                .collapsible {
-                                    background-color: #5E6A71;
-                                    color: white;
-                                    cursor: pointer;
-                                    padding: 18px;
-                                    width: 100%;
-                                    border: 10px;
-                                    border-color: black;
-                                    text-align: center;
-                                    justify-content: center;
-                                    outline: none;
-                                    font-size: 1.5em;
-                                }
-
-                                .active,
-                                .collapsible:hover {
-                                    background-color: #981E32;
-                                }
-
-                                .collapsible:after {
-                                    content: '\002B';
-                                    color: white;
-                                    font-weight: bold;
-                                    float: right;
-                                    margin-left: 5px;
-                                }
-
-                                .active:after {
-                                    content: "\2212";
-                                }
-
-                                .content {
-                                    padding: 0 18px;
-                                    padding-top: 0.1em;
-                                    max-height: 0;
-                                    overflow: hidden;
-                                    transition: max-height 0.2s ease-out;
-                                    background-color: #f1f1f1;
-                                    border: 10px;
-                                    border-color: black;
-                                    font-size: 1.5em;
-                                }
-
-                                .fqa-text {
-                                    font-size: 0.9em;
-                                }
-                            </style>
-                            <button type="button" class="collapsible">What is a CougHacks?</button>
-                            <div class="content">
-                                <p class="fqa-text"> CougsHacks is a collegiate level hackathon held
-                                    at
-                                    WSU Everett. </p>
-                            </div>
-                            <button type="button" class="collapsible">Where is CougHacks
-                                hosted?</button>
-                            <div class="content">
-                                <p class="fqa-text"> CougsHacks will be hosted in person at the WSU
-                                    Everett Campus. </p>
-                            </div>
-                            <button type="button" class="collapsible">Who can attend?</button>
-                            <div class="content">
-                                <p class="fqa-text">All students attending any University, College,
-                                    or
-                                    High School can attend.</p>
-                            </div>
-                            <button type="button" class="collapsible">How much does admittance
-                                cost?</button>
-                            <div class="content">
-                                <p class="fqa-text">CougHacks is completely free to attend.</p>
-                            </div>
-                            <button type="button" class="collapsible">What materials do I
-                                need?</button>
-                            <div class="content">
-                                <p class="fqa-text">All students must bring their own laptop,
-                                    charger,
-                                    sleeping bags, and pillows.</p>
-                            </div>
-                            <button type="button" class="collapsible">How big are teams?</button>
-                            <div class="content">
-                                <p class="fqa-text">Team sizes are 4 people maximum.</p>
-                            </div>
-                            <button type="button" class="collapsible">What if I don't have a
-                                team?</button>
-                            <div class="content">
-                                <p class="fqa-text"> During the start of the event we will host a
-                                    team
-                                    forming activity to ensure that all attendies have a team.</p>
-                            </div>
-                            <button type="button" class="collapsible">Can I work on my project
-                                before
-                                the event starts?</button>
-                            <div class="content">
-                                <p class="fqa-text">No, we require everyone to start their project
-                                    during the hackathon.</p>
-                            </div>
-                            <button type="button" class="collapsible">What are the judging
-                                criterias?</button>
-                            <div class="content">
-                                <p class="fqa-text">You will be judged on a scales detailed in the
-                                    following document:<br><a
-                                        href="https://docs.google.com/document/d/12HtCwnNLUMPc36EXWlDpVM5qje_pCa0Q6EEh3D87j5w/view">Click
-                                        here to view the Judging Criteria document.</a></p>
-                            </div>
-                            <button type="button" class="collapsible">I have a different question.
-                                Who
-                                can I ask?</button>
-                            <div class="content">
-                                <p class="fqa-text">Please reach out to us via one of our social
-                                    media
-                                    platforms or send us an <a class="blue" href="mailto:nhan.nguyen1@wsu.edu">email at:
-                                        nhan.nguyen1@wsu.edu</a>.
-                                    We are happy to answer any questions
-                                    you may have.</p>
-                            </div>
-                            <script>
-                                var coll = document.getElementsByClassName("collapsible");
-                                var i;
-                                for (i = 0; i < coll.length; i++) {
-                                    coll[i].addEventListener("click", function () {
-                                        this.classList.toggle("active");
-                                        var content = this.nextElementSibling;
-                                        if (content.style.display === "block") {
-                                            content.style.display = "none";
-                                        } else {
-                                            content.style.display = "block";
-                                        }
-                                        if (content.style.maxHeight) {
-                                            content.style.maxHeight = null;
-                                        } else {
-                                            content.style.maxHeight = content.scrollHeight + "px";
-                                        }
-                                    });
-                                }
-                            </script>
+                    
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
+                            <h4>Nhan Ya Business</h4>
+                            <p class="text-muted">Mr President</p>
                         </div>
                     </div>
-                    <!-- end of col -->
-                </div>
-                <!-- end of row -->
-                </br>
-                </br>
-                <div class="row"></div>
-            </div>
-        </div>
-        <!-- Contact -->
-        <div id="contact" class="form">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h2>CONTACT</h2>
-                        <ul class="list-unstyled li-space-lg">
-                            <li class="address">Feel free to contact us using our email address
-                                with
-                                any questions or opportunities</li>
-                            <li>
-                                <i class="fas fa-map-marker-alt"></i>915 North Broadway Everett,
-                                WA
-                                98201
-                            </li>
-                            <li>
-                                <i class="fas fa-envelope"></i>
-                                <a class="blue" href="mailto:nhan.nguyen1@wsu.edu">nhan.nguyen1@wsu.edu</a>
-                            </li>
-                        </ul>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
+                            <h4>Kebin Imports</h4>
+                            <p class="text-muted">Mr Vice President</p>
+                        </div>
                     </div>
-                    <!-- end of col -->
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/4.jpg" alt="..." />
+                            <h4>Carlos Sanchez</h4>
+                            <p class="text-muted">Secretary of Awesomeness</p>
+                        </div>
+                    </div>
+                    
+
                 </div>
-                <!-- end of row -->
+
                 <div class="row">
-                    <div class="col-lg-6 offset-lg-3"></div>
-                    <!-- end of col -->
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
+                            <h4>Jack Of Few Trades</h4>
+                            <p class="text-muted">Not sure what his job title is</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/5.jpg" alt="..." />
+                            <h4>Dr Bob Zheng</h4>
+                            <p class="text-muted">Faculty Club Member</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/6.jpg" alt="..." />
+                            <h4>Butch T. Cougar</h4>
+                            <p class="text-muted">Our Boss</p>
+                        </div>
+                    </div>
                 </div>
-                <!-- end of row -->
             </div>
-            <!-- end of container -->
-        </div>
-        <!-- end of form -->
-        <!-- end of contact -->
+        </section>
+
+        <!-- Sponsors-->
+        <section class="page-section" id="sponsors">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-heading text-uppercase">Sponsors</h2>
+                </div>
+                    
+                <div class="mb-5" style="text-align: center;">
+                    <img src="assets/img/microsoft.png" alt="" style="max-height: 80px; margin-right: 20px;">
+                    <img src="assets/img/microsoft.png" alt="" style="max-height: 80px; margin-right: 20px;">
+                    <img src="assets/img/microsoft.png" alt="" style="max-height: 80px; margin-right: 20px;">
+                </div>
+
+                <div style="text-align: center;">
+                    <a class="btn btn-danger btn-xl text-uppercase" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdqsgOinAYh6Fo6r27HNbgC4jeKKchEVYE7j2XA0hgcAOdo6g/alreadyresponded">Become a sponsor</a>
+                </div>
+                   
+
+
+            </div>
+        </section>
+
+        
         <!-- Footer -->
-        <div class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="footer-col">
-                            <h4>About The ACM @ WSUE</h4>
-                            <p>We are The Association for Computing Machinery chapter at
-                                Washington
-                                State University Everett. Our mission is to provide our students
-                                with resources to develop their professional and technical
-                                abilities
-                            </p>
+        <section class="page-section" id="footer" style="background-color: rgb(246, 246, 246);">
+            
+            
+            
+            <div class="footer" >
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="footer-col">
+                                <h4>About The ACM @ WSUE</h4>
+                                <p>We are The Association for Computing Machinery chapter at
+                                    Washington
+                                    State University Everett. Our mission is to provide our students
+                                    with resources to develop their professional and technical
+                                    abilities
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <!-- end of col -->
-                    <div class="col-md-4">
-                        <div class="footer-col middle">
-                            <h4>Important Links</h4>
-                            <ul class="list-unstyled li-space-lg">
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">
-                                        <a class="turquoise" href="https://www.acm.org/">The
-                                            Association for Computing Machinery</a>
-                                    </div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">
-                                        <a class="turquoise" href="https://everett.wsu.edu/">Washington State
-                                            University Everett</a>
-                                    </div>
-                                </li>
-                            </ul>
+                        <!-- end of col -->
+                        <div class="col-md-4">
+                            <div class="footer-col middle">
+                                <h4>Important Links</h4>
+                                <ul class="list-unstyled li-space-lg">
+                                    <li class="media">
+                                        <i class="fas fa-square"></i>
+                                        <div class="media-body">
+                                            <a style="color: red;" href="https://www.acm.org/">The
+                                                Association for Computing Machinery</a>
+                                        </div>
+                                    </li>
+                                    <li class="media">
+                                        <i class="fas fa-square"></i>
+                                        <div class="media-body">
+                                            <a style="color: red;" href="https://everett.wsu.edu/">Washington State
+                                                University Everett</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <!-- end of col -->
-                    <div class="col-md-4">
-                        <div class="footer-col last">
-                            <h4>Social Media</h4>
-                            <span class="fa-stack">
-                                <a href="https://www.facebook.com/ACM-WSU-Everett-111068846968912/">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
-                                </a>
-                            </span>
-                            <span class="fa-stack">
-                                <a href="https://twitter.com/AcmWsu">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-twitter fa-stack-1x"></i>
-                                </a>
-                            </span>
-                            <span class="fa-stack">
-                                <a href="https://www.instagram.com/acmwsueverett/">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-instagram fa-stack-1x"></i>
-                                </a>
-                            </span>
+                        <!-- end of col -->
+                        <div class="col-md-4">
+                            <div class="footer-col last">
+                                <h4>Social Media</h4>
+                                <span class="fa-stack" >
+                                    <a href="https://www.facebook.com/ACM-WSU-Everett-111068846968912/">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                                    </a>
+                                </span>
+                                <span class="fa-stack">
+                                    <a href="https://twitter.com/AcmWsu">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-twitter fa-stack-1x"></i>
+                                    </a>
+                                </span>
+                                <span class="fa-stack">
+                                    <a href="https://www.instagram.com/acmwsueverett/">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-instagram fa-stack-1x"></i>
+                                    </a>
+                                </span>
+                            </div>
                         </div>
+                        <!-- end of col -->
                     </div>
-                    <!-- end of col -->
+                    <!-- end of row -->
                 </div>
-                <!-- end of row -->
+                <!-- end of container -->
             </div>
-            <!-- end of container -->
-        </div>
+
+
+            <div style="text-align: center;">
+                <a class="btn btn-danger btn-xl text-uppercase" style="margin-top: 40px; margin-bottom: 15px; background-color: rgb(213, 213, 213); border-color: rgb(213, 213, 213);"href="#mast">Back to top</a>
+                    
+            </div>
+        </section >
+        
         <!-- end of footer -->
         <!-- end of footer -->
         <!-- Copyright -->
-        <div class="copyright">
+        <div class="copyright" style="background-color: rgb(42, 42, 42);">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -707,27 +747,233 @@
             </div>
             <!-- end of container -->
         </div>
-        <!-- end of copyright -->
-        <!-- end of copyright -->
-        <!-- Scripts -->
-        <script src="js/jquery.min.js"></script>
-        <!-- jQuery for Bootstrap's JavaScript plugins -->
-        <script src="js/popper.min.js"></script>
-        <!-- Popper tooltip library for Bootstrap -->
-        <script src="js/bootstrap.min.js"></script>
-        <!-- Bootstrap framework -->
-        <script src="js/jquery.easing.min.js"></script>
-        <!-- jQuery Easing for smooth scrolling between anchors -->
-        <script src="js/swiper.min.js"></script>
-        <!-- Swiper for image and text sliders -->
-        <script src="js/jquery.magnific-popup.js"></script>
-        <!-- Magnific Popup for lightboxes -->
-        <script src="js/morphext.min.js"></script>
-        <!-- Morphtext rotating text in the header -->
-        <script src="js/validator.min.js"></script>
-        <!-- Validator.js - Bootstrap plugin that validates forms -->
-        <script src="js/scripts.js"></script>
-        <!-- Custom scripts -->
-</body>
 
+
+
+
+
+        <!-- Portfolio Modals-->
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
+                                    <p class="description">Blah blah</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Threads
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Illustration
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />
+                                    <p class="description">Blah blah</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Explore
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Graphic Design
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." />
+                                    <p class="description">Blah blah</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Finish
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Identity
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 4 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="..." />
+                                    <p class="description">Blah blah</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Lines
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Branding
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 5 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="..." />
+                                    <p class="description">Blah blah</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Southwest
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Website Design
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio item 6 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..." />
+                                    <p class="description">Blah blah</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Window
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Photography
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
 </html>
