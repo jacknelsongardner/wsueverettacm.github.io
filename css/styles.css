@@ -10,6 +10,13 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+ @media (max-width: 780px) {
+  header.masthead {
+    display: none; /* Set transparency */
+  }
+}
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -10953,6 +10960,7 @@ p {
     margin-right: 0;
   }
 }
+
 header.masthead {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -10965,6 +10973,8 @@ header.masthead {
   background-position: center center;
   background-size: cover;
 }
+
+
 
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
